@@ -1,0 +1,40 @@
+{
+    "name": {
+        "default": "isSafeHere",
+        "pt": "seguroAqui",
+        "block": "É seguro [Aqui]?"
+    },
+    "syntax": {
+        "c": "int isSafeHere ( void );",
+        "python": "isSafeHere()",
+        "blocks": "<block type='issafe'><field name='COMPLEMENT'>Here</field></block>"
+    },
+    "description": {
+        "long": "A função analisa a posição ocupada pelo gladiador na arena, verificando se há <a href='manual.php#nav-sim'>gás tóxico</a> ou não.",
+        "brief": "Descobre se o gladiador está dentro da nuvem tóxica."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna True caso haja gás tóxico na posição do gladiador, ou False caso contrário.",
+        "c": "Retorna 1 caso haja gás tóxico na posição do gladiador, ou 0 caso contrário.",
+        "blocks": "Retorna Verdadeiro caso haja gás tóxico na posição do gladiador, ou Falso caso contrário."
+    },
+    "sample": {
+        "c": "21.c",
+        "python": "21.py",
+        "blocks": "21.xml",
+        "explain": "21.txt"
+    },
+    "seealso": [
+        "issafethere",
+        "getsaferadius"
+    ],
+    "snippet": {
+        "c": "int ${1:safe} = isSafeHere();",
+        "python": "${1:safe} = isSafeHere()"
+    }
+}

@@ -1,0 +1,1 @@
+No exemplo o gladiador se vira em direção ao canto da arena e se move na direção dele. Ao encontrar um obstáculo (ou alcançar o ponto), e se vira para o outro canto e se move até ele.

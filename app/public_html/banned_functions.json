@@ -1,0 +1,8 @@
+{
+    "functions": [
+        "setPosition",
+        "setHp",
+        "setAp",
+        "lvlUp"
+    ]
+}

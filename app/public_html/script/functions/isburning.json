@@ -1,0 +1,43 @@
+{
+    "name": {
+        "default": "isBurning",
+        "pt": "estaQueimando",
+        "block": "Alvo está [Queimando]?"
+    },
+    "syntax": {
+        "c": "int isBurning ( void );",
+        "python": "isBurning()",
+        "blocks": "<block type='is_status'><field name='COMPLEMENT'>Burning</field></block>"
+    },
+    "description": {
+        "long": "A função verifica se o alvo selecionado pelo gladiador possui o efeito <a href='manual#nav-efeito'>queimadura</a>.",
+        "brief": "Verifica se o alvo está queimando."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna True caso o alvo esteja no campo de visão do gladiador e possua o efeito queimadura, caso contrário retorna False.",
+        "c": "Retorna 1 caso o alvo esteja no campo de visão do gladiador e possua o efeito queimadura, caso contrário retorna 0.",
+        "blocks": "Retorna Verdadeiro caso o alvo esteja no campo de visão do gladiador e possua o efeito queimadura, caso contrário retorna Falso."
+    },
+    "sample": {
+        "c": "27.c",
+        "python": "27.py",
+        "blocks": "27.xml",
+        "explain": "27.txt"
+    },
+    "seealso": [
+        "isprotected",
+        "isrunning",
+        "isslowed",
+        "isstunned",
+        "getburntimeleft"
+    ],
+    "snippet": {
+        "c": "int ${1:burn} = isBurning();",
+        "python": "${1:burn} = isBurning()"
+    }
+}

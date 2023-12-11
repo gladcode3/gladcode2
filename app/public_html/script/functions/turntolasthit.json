@@ -1,0 +1,43 @@
+{
+    "name": {
+        "default": "turnToLastHit",
+        "pt": "viraFuiAcertado",
+        "block": "Virar para [Ataque recebido]"
+    },
+    "syntax": {
+        "c": "int turnToLastHit ( void );",
+        "python": "turnToLastHit()",
+        "blocks": "<block type='turn'><field name='COMPLEMENT'>HIT</field></block>"
+    },
+    "description": {
+        "long": "Rotaciona o gladiador fazendo com que ele fique virado na direção do ponto de onde originou o último ataque recebido. Caso a rotação necessária resulte em uma quantidade de graus maior que o gladiador consiga rotacionar em um intervalo de tempo (determinado pelo atributo <a href='manual.php#nav-glad'>velocidade de rotação</a>), ele irá rotacionar somente a quantidade que conseguir.",
+        "brief": "Rotaciona o gladiador para a origem do último ataque recebido."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna True caso ao fim da rotação o gladiador ficou virado para o ponto informado, ou False caso contrário.",
+        "c": "Retorna 1 caso ao fim da rotação o gladiador ficou virado para o ponto informado, ou 0 caso contrário.",
+        "blocks": "Retorna Verdadeiro caso ao fim da rotação o gladiador ficou virado para o ponto informado, ou Falso caso contrário. Por padrão o retorno deste bloco é ignorado."
+    },
+    "sample": {
+        "c": "16.c",
+        "python": "16.py",
+        "blocks": "16.xml",
+        "explain": "16.txt"
+    },
+    "seealso": [
+        "turnto",
+        "turn",
+        "turnright",
+        "turnleft",
+        "turntotarget"
+    ],
+    "snippet": {
+        "c": "turnToLastHit();",
+        "python": "turnToLastHit()"
+    }
+}

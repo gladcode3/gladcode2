@@ -1,0 +1,36 @@
+{
+    "name": {
+        "default": "setName",
+        "pt": "mudaNome"
+    },
+    "syntax": {
+        "c": "void setName ( char * nome );",
+        "python": "setName(nome)"
+    },
+    "description": {
+        "long": "Atribui um nome para o gladiador. O nome atribuído será utilizado durante toda a simulação para referir-se ao gladiador. Esta função somente pode ser chamada dentro da função setup.",
+        "brief": "Atribui um nome para o gladiador."
+    },
+    "param": {
+        "default": [
+            {"name": "nome", "description": "String contendo o nome desejado do gladiador."}
+        ]
+    },
+    "treturn": {
+        "default": "A função não possui retorno."
+    },
+    "sample": {
+        "c": "36.c",
+        "python": "36.py",
+        "explain": "36.txt"
+    },
+    "seealso": [
+        "setagi",
+        "setstr",
+        "setint"
+    ],
+    "snippet": {
+        "c": "setName(${1:name});",
+        "python": "setName(${1:name})"
+    }
+}

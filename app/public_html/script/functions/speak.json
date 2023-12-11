@@ -1,0 +1,42 @@
+{
+    "name": {
+        "default": "speak",
+        "pt": "fala",
+        "block": "Falar"
+    },
+    "syntax": {
+        "c": "void speak ( char * formato, ... );",
+        "python": "speak(texto)",
+        "blocks": "<block type='speak'></block>"
+    },
+    "description": {
+        "long": "Faz com que apareça próximo ao gladiador uma caixa com uma mensagem, representando a fala do gladiador. A mensagem fica visível por 3 segundos e então desaparece. Esta função não possui propósito para efeitos da simulação, e é útil somente para fins de depuração do código ou efeito cosmético durante a batalha.",
+        "brief": "Mostra um balão de fala com uma mensagem."
+    },
+    "param": {
+        "default": [
+            {"name": "texto", "description": "String contendo a mensagem a ser mostrada."}
+        ],
+        "c": [
+            {"name": "formato", "description": "String formatada contendo a mensagem a ser mostrada. Pode conter os coringas %d, %f, %c, etc. semelhante à função printf."},
+            {"name": "...", "description": "Lista de variáveis que terão seus valores mostrados no lugar dos caracteres coringas."}
+        ],
+        "blocks": [
+            {"name": "texto", "description": "Texto contendo a mensagem a ser mostrada."}
+        ]
+    },
+    "treturn": {
+        "default": "A função não possui retorno."
+    },
+    "sample": {
+        "c": "37.c",
+        "python": "37.py",
+        "blocks": "37.xml",
+        "explain": "37.txt"
+    },
+    "seealso": [],
+    "snippet": {
+        "c": "speak(\"${1:text}\");",
+        "python": "speak(\"${1:text}\")"
+    }
+}

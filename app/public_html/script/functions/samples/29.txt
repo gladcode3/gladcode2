@@ -1,0 +1,1 @@
+No exemplo o gladiador procura um inimigo, e caso encontre verifica se ele nao está muito próximo ou o inimigo esteja correndo (possivelmente em sua direção). Em caso afirmativo, usa a habilidade {teleport} para fugir, caso contrário lança {fireball} nele. Caso não encontre nenhum inimigo, o gladiador fica andando em círculos até enxergar um inimigo ou ser atingido.

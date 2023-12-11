@@ -1,0 +1,5 @@
+.vscode
+temp/*
+node/node_modules
+cwp_stats
+config.json

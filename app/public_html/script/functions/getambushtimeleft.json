@@ -1,0 +1,40 @@
+{
+    "name": {
+        "default": "getAmbushTimeLeft",
+        "pt": "tempoEmboscada",
+        "block": "Tempo restante [Invisibilidade]"
+    },
+    "syntax": {
+        "c": "float getAmbushTimeLeft ( void );",
+        "python": "getAmbushTimeLeft()",
+        "blocks": "<block type='get_time'><field name='COMPLEMENT'>Ambush</field></block>"
+    },
+    "description": {
+        "long": "Retorna o tempo restante até que o efeito <a href='manual.php#nav-efeito'>invisibilidade</a> expire.",
+        "brief": "Retorna o tempo restante para expirar o efeito Invisibilidade."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Float contendo o tempo restante até o efeito proteção expirar.",
+        "blocks": "Número contendo o tempo restante até o efeito proteção expirar."
+    },
+    "sample": {
+        "c": "1.c",
+        "python": "1.py",
+        "blocks": "1.xml",
+        "explain": "1.txt"
+    },
+    "seealso": [
+        "getblocktimeleft",
+        "getburntimeleft",
+        "isstunned"
+    ],
+    "snippet": {
+        "c": "float ${1:ambush_time} = getAmbushTimeLeft();",
+        "python": "${1:ambush_time} = getAmbushTimeLeft()"
+    }
+}

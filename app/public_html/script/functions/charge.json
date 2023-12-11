@@ -1,0 +1,39 @@
+{
+    "name": {
+        "default": "charge",
+        "pt": "investida",
+        "block": "Investida"
+    },
+    "syntax": {
+        "c": "int charge ( void );",
+        "python": "charge()",
+        "blocks": "<block type='charge'></block>"
+    },
+    "description": {
+        "long": "Faz com que o gladiador corra em direção ao alvo selecionado. Caso o alvo esteja visível o gladiador recebe o efeito <a href='manual.php#nav-efeito'>movimentação</a>, aumentando sua velocidade em 3x (ficando 4x a velocidade original). O gladiador então começará seu movimento em direção ao alvo selecionado. Caso o gladiador fique em distância corpo-a-corpo (2 passos), seu movimento encerrará e ele perderá o efeito movimentação (fazendo sua velocidade voltar ao normal). Ao fim do movimento, o gladiador imediatamente desfere um ataque corpo-a-copo. O dano deste ataque varia de acordo com a distância inicial do gladiador para o seu alvo no momento que começou a investida. O dano é 0% do atributo dano físico à distância 0 passos do alvo, a vai aumentando até 250% do dano físico à distância de 9 passos do alvo. O alvo acertado por este ataque, além do dano, receberá o efeito movimentação, fazendo sua velocidade reduzir por 5s. A velocidade do alvo sob este efeito será de <a href='https://www.wolframalpha.com/input/?i=Plot%5BE%5E(-0.067+X),+%7BX,+0,+30%7D%5D' target='_blank'>Vel=e<sup>-0.067 STR</sup></a>, onde STR é a <a href='manual.php#nav-glad'>força</a> do gladiador. Caso o alvo do gladiador fique invisível ou em uma distância superior ao campo de visão do gladiador durante o efeito da habilidade, o gladiador irá se deslocar até a última posição conhecida de seu alvo antes de encerrar o movimento.",
+        "brief": "Corre em direção ao alvo e o ataca."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna True caso a habilidade tenha sido lançada com sucesso, caso contrário retorna False.",
+        "c": "Retorna 1 caso a habilidade tenha sido lançada com sucesso, caso contrário retorna 0.",
+        "blocks": "Retorna Verdadeiro caso a habilidade tenha sido lançada com sucesso, caso contrário retorna Falso. Por padrão o retorno deste bloco é ignorado."
+    },
+    "sample": {
+        "c": "4.c",
+        "python": "4.py",
+        "blocks": "4.xml",
+        "explain": "4.txt"
+    },
+    "seealso": [
+        "block"
+    ],
+    "snippet": {
+        "c": "charge();",
+        "python": "charge()"
+    }
+}

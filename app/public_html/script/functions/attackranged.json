@@ -1,0 +1,44 @@
+{
+    "name": {
+        "default": "attackRanged",
+        "pt": "ataqueDistancia",
+        "block": "Ataque à distância"
+    },
+    "syntax": {
+        "c": "int attackRanged ( float x, float y );",
+        "python": "attackRanged(x, y)",
+        "blocks": "<block type='ranged'></block>"
+    },
+    "description": {
+        "long": "Vira o gladiador para o ponto definido pelas coordenadas x e y recebidas como parâmetro e então realiza um ataque de longa distância em direção ao ponto. Caso o gladiador não consiga terminar sua rotação até o ponto (de acordo com sua <a href='manual.php#nav-glad'>velocidade de rotação</a>, o ataque não é realizado. Quando o ataque é realizado, um projétil é arremessado a partir do ponto do gladiador atacante e percorre a arena com velocidade 15 passos por segundo (p/s) em direção ao ponto do alvo. Caso o projétil entre em contato com qualquer gladiador durante seu percurso, ele interrompe seu percurso e causa dano igual ao valor do <a href='manual.php#nav-glad'>atributo dano à distância</a> do gladiador que disparou o projétil no gladiador acertado.",
+        "brief": "Realiza um ataque de longa distância."
+    },
+    "param": {
+        "default": [
+            {"name": "x", "description": "Float contendo o valor da coordenada x do ponto alvo."},
+            {"name": "y", "description": "Float contendo o valor da coordenada y do ponto alvo."}
+		],
+		"blocks": [
+            {"name": "x", "description": "Número contendo o valor da coordenada x do ponto alvo."},
+            {"name": "y", "description": "Número contendo o valor da coordenada y do ponto alvo."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna True caso o ataque tenha sido realizado com sucesso, caso contrário retorna False.",
+		"c": "Retorna 1 caso o ataque foi realizado com sucesso, caso contrário retorna 0.",
+        "blocks": "Retorna Verdadeiro caso o ataque tenha sido lançada com sucesso, caso contrário retorna Falso. Por padrão o retorno deste bloco é ignorado."
+    },
+    "sample": {
+        "c": "3.c",
+		"python": "3.py",
+		"blocks": "3.xml",
+        "explain": "3.txt"
+    },
+    "seealso": [
+        "attackmelee"
+    ],
+    "snippet": {
+        "c": "attackRanged(${1:X}, ${2:Y});",
+        "python": "attackRanged(${1:X}, ${2:Y})"
+    }
+}

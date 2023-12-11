@@ -1,0 +1,36 @@
+{
+    "name": {
+        "default": "setAGI",
+        "pt": "mudaAGI"
+    },
+    "syntax": {
+        "c": "void setAGI ( int valor );",
+        "python": "setAGI(valor)"
+    },
+    "description": {
+        "long": "Atribui um valor para o atributo Agilidade (AGI) do gladiador. Esta função somente pode ser chamada dentro da função setup.",
+        "brief": "Atribui um valor para o atributo Agilidade (AGI) do gladiador."
+    },
+    "param": {
+        "default": [
+            {"name": "valor", "description": "Inteiro contendo o valor que será atribuído ao atributo Agilidade."}
+        ]
+    },
+    "treturn": {
+        "default": "A função não possui retorno."
+    },
+    "sample": {
+        "c": "36.c",
+        "python": "36.py",
+        "explain": "36.txt"
+    },
+    "seealso": [
+        "setstr",
+        "setint",
+        "setname"
+    ],
+    "snippet": {
+        "c": "setAGI(${1:value});",
+        "python": "setAGI(${1:value})"
+    }
+}

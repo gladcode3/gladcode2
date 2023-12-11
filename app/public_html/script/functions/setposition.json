@@ -1,0 +1,37 @@
+{
+    "name": {
+        "default": "setPosition",
+        "pt": "mudaPosicao"
+    },
+    "syntax": {
+        "c": "void setPosition ( float x, float y );",
+        "python": "setPosition(x, y)"
+    },
+    "description": {
+        "long": "Altera instantaneamente a posição do gladiador na arena de acordo com os valores das coordenadas X e Y recebidas como parâmetro. Esta função somente pode ser usada no editor. O editor não permite que o código do gladiador seja salvo com esta função. O objetivo desta função é puramente para realização de testes.",
+        "brief": "Posiciona o gladiador em um ponto da arena."
+    },
+    "param": {
+        "default": [
+            {"name": "x", "description": "Float contendo o valor da coordenada x do ponto alvo."},
+            {"name": "y", "description": "Float contendo o valor da coordenada y do ponto alvo."}
+        ]
+    },
+    "treturn": {
+        "default": "A função não possui retorno."
+    },
+    "sample": {
+        "c": "33.c",
+        "python": "33.py",
+        "explain": "33.txt"
+    },
+    "seealso": [
+        "lvlup",
+        "sethp",
+        "setap"
+    ],
+    "snippet": {
+        "c": "setPosition(${1:X}, ${2:Y});",
+        "python": "setPosition(${1:X}, ${2:Y})"
+    }
+}

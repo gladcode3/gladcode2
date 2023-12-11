@@ -1,0 +1,47 @@
+{
+    "name": {
+        "default": "moveTo",
+        "pt": "movePara",
+        "block": "Mover para [Posição]"
+    },
+    "syntax": {
+        "c": "int moveTo ( float x, float y );",
+        "python": "moveTo(x, y)",
+        "blocks": "<block type='move'><field name='COMPLEMENT'>TO</field></block>"
+    },
+    "description": {
+        "long": "Faz com que o gladiador se mova para um ponto específico na arena definido pelos parâmetros x e y. Primeiramente o gladiador vira-se na direção do ponto e após isso começa a se locomover em sua direção.",
+        "brief": "Move o gladiador em direção a um ponto."
+    },
+    "param": {
+        "default": [
+            {"name": "x", "description": "Float contendo o valor da coordenada x do ponto de destino."},
+            {"name": "y", "description": "Float contendo o valor da coordenada y do ponto de destino."}
+        ],
+        "blocks": [
+            {"name": "x", "description": "Número contendo o valor da coordenada x do ponto de destino."},
+            {"name": "y", "description": "Número contendo o valor da coordenada y do ponto de destino."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna True caso o gladiador já esteja no ponto de destino, ou False caso contrário.",
+        "c": "Retorna 1 caso o gladiador já esteja no ponto de destino, ou 0 caso contrário.",
+        "blocks": "Retorna Verdadeiro caso o gladiador já esteja no ponto de destino, ou Falso caso contrário. Por padrão o retorno deste bloco é ignorado."
+    },
+    "sample": {
+        "c": "35.c",
+        "python": "35.py",
+        "blocks": "35.xml",
+        "explain": "35.txt"
+    },
+    "seealso": [
+        "turnto",
+        "movetotarget",
+        "stepForward",
+        "moveForward"
+    ],
+    "snippet": {
+        "c": "moveTo(${1:X}, ${2:Y});",
+        "python": "moveTo(${1:X}, ${2:Y})"
+    }
+}

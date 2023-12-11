@@ -1,0 +1,43 @@
+{
+    "name": {
+        "default": "upgradeINT",
+        "pt": "melhoraINT",
+        "block": "Melhorar [Inteligência]"
+    },
+    "syntax": {
+        "c": "int upgradeINT ( int pontos );",
+        "python": "upgradeINT(pontos)",
+        "blocks": "<block type='upgrade'><field name='COMPLEMENT'>INT</field></block>"
+    },
+    "description": {
+        "long": "Utiliza os pontos de aprimoramento acumulados para aumentar o valor do atributo Inteligência do gladiador. Os pontos de aprimoramento são ganhos toda vez que o gladiador <a href='manual#xp-table'>sobre de nível</a>. A quantidade de pontos aprimorados é igual ao valor passado no parâmetro da função, nunca ultrapassando a quantidade de pontos de aprimoramento disponíveis.",
+        "brief": "Aprimora o atributo Inteligência."
+    },
+    "param": {
+        "default": [
+            {"name": "pontos", "description": "Inteiro contendo quantos pontos serão aprimorados do atributo Inteligência."}
+        ],
+        "blocks": [
+            {"name": "pontos", "description": "Número contendo quantos pontos serão aprimorados do atributo Inteligência."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna False caso não haja nenhum ponto de aprimoramento disponível e a Inteligência do gladiador não tenha sido aprimorada. Caso contrário retorna True.",
+        "c": "Retorna 0 caso não haja nenhum ponto de aprimoramento disponível e a Inteligência do gladiador não tenha sido aprimorada. Caso contrário retorna 1.",
+        "blocks": "Retorna Falso caso não haja nenhum ponto de aprimoramento disponível e a Inteligência do gladiador não tenha sido aprimorada. Caso contrário retorna Verdadeiro. Por padrão o retorno deste bloco é ignorado."
+    },
+    "sample": {
+        "c": "8.c",
+        "python": "8.py",
+        "blocks": "8.xml",
+        "explain": "8.txt"
+    },
+    "seealso": [
+        "upgradestr",
+        "upgradeagi"
+    ],
+    "snippet": {
+        "c": "upgradeINT(${1:points});",
+        "python": "upgradeINT(${1:points})"
+    }
+}

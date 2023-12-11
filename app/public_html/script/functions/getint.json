@@ -1,0 +1,39 @@
+{
+    "name": {
+        "default": "getINT",
+        "pt": "pegaINT",
+        "block": "Pegar informação [Atributo Inteligência]"
+    },
+    "syntax": {
+        "c": "int getINT ( void );",
+        "python": "getINT()",
+        "blocks": "<block type='get_info'><field name='COMPLEMENT'>INT</field></block>"
+    },
+    "description": {
+        "long": "Retorna o valor do atributo Inteligência (INT) do gladiador.",
+        "brief": "Retorna o valor do atributo Inteligência (INT) do gladiador."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Inteiro contendo o valor do atributo Inteligência do gladiador.",
+        "blocks": "Número contendo o valor do atributo Inteligência do gladiador."
+    },
+    "sample": {
+        "c": "8.c",
+        "python": "8.py",
+        "blocks": "8.xml",
+        "explain": "8.txt"
+    },
+    "seealso": [
+        "getstr",
+        "getagi"
+    ],
+    "snippet": {
+        "c": "int ${1:myint} = getINT();",
+        "python": "${1:myint} = getINT()"
+    }
+}

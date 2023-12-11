@@ -1,0 +1,40 @@
+{
+    "name": {
+        "default": "isTargetVisible",
+        "pt": "alvoVisivel",
+        "block": "Alvo está [Visível]?"
+    },
+    "syntax": {
+        "c": "int isTargetVisible ( void );",
+        "python": "isTargetVisible()",
+        "blocks": "<block type='is_status'><field name='COMPLEMENT'>Visible</field></block>"
+    },
+    "description": {
+        "long": "Determina se o alvo selecionado pelo gladiador está no campo de visão. Esta função é útil pois ela verifica a visibilidade do alvo atual, sem precisar recorrer às funções que procuram um novo alvo.",
+        "brief": "Descobre se alvo está no campo de visão e pode ser visto."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna True caso o alvo esteja no campo de visão do gladiador, ou False caso contrário.",
+        "c": "Retorna 1 caso o alvo esteja no campo de visão do gladiador, ou 0 caso contrário.",
+        "blocks": "Retorna Verdadeiro caso o alvo esteja no campo de visão do gladiador, ou Falso caso contrário."
+    },
+    "sample": {
+        "c": "14.c",
+        "python": "14.py",
+        "blocks": "14.xml",
+        "explain": "14.txt"
+    },
+    "seealso": [
+        "doyouseeme",
+        "howmanyenemies"
+    ],
+    "snippet": {
+        "c": "int ${1:target} = isTargetVisible();",
+        "python": "${1:target} = isTargetVisible()"
+    }
+}

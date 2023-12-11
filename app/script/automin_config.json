@@ -1,0 +1,349 @@
+{
+    "path": {
+        "root": "/home/gladcode/public_html",
+        "js": {
+            "dev": "script/dev",
+            "min": "script"
+        },
+        "css": {
+            "dev": "css/dev",
+            "min": "css"
+        }
+    },
+    "files": [{
+        "name": "index.php",
+        "js": {
+            "files": [
+                {"name": "index.js"},
+                {"name": "dialog.js"},
+                {"name": "socket.js"},
+                {"name": "googlelogin.js"},
+                {"name": "header.js"}
+            ]
+        },
+        "css": {
+            "files": [
+                {"name": "index.css"},
+                {"name": "dialog.css"},
+                {"name": "header.css"}
+            ]
+        }
+    },{
+        "name": "docs.php",
+        "js": {
+            "files": [
+                {"name": "docs.js"},
+                {"name": "side-menu.js"},
+                {"name": "googlelogin.js"},
+                {"name": "socket.js"},
+                {"name": "header.js"}
+            ]
+        },
+        "css": {
+            "files": [
+                {"name": "table.css"},
+                {"name": "docs.css"},
+                {"name": "side-menu.css"},
+                {"name": "header.css"}
+            ]
+        }
+    },{
+        "name": "docs-ptbr.php",
+        "js": {
+            "files": [
+                {"name": "docs.js"},
+                {"name": "side-menu.js"},
+                {"name": "googlelogin.js"},
+                {"name": "socket.js"},
+                {"name": "header.js"}
+            ]
+        },
+        "css": {
+            "files": [
+                {"name": "table.css"},
+                {"name": "docs.css"},
+                {"name": "side-menu.css"},
+                {"name": "header.css"}
+            ]
+        }
+    },{
+        "name": "docs-blocks.php",
+        "js": {
+            "files": [
+                {"name": "docs.js"},
+                {"name": "side-menu.js"},
+                {"name": "googlelogin.js"},
+                {"name": "socket.js"},
+                {"name": "header.js"}
+            ]
+        },
+        "css": {
+            "files": [
+                {"name": "table.css"},
+                {"name": "docs.css"},
+                {"name": "side-menu.css"},
+                {"name": "header.css"}
+            ]
+        }
+    },{
+        "name": "function.php",
+        "js": {
+            "files": [
+                {"name": "blocks.js"},
+                {"name": "function.js"},
+                {"name": "side-menu.js"},
+                {"name": "googlelogin.js"},
+                {"name": "socket.js"},
+                {"name": "header.js"}
+            ]
+        },
+        "css": {
+            "files": [
+                {"name": "table.css"},
+                {"name": "docs.css"},
+                {"name": "side-menu.css"},
+                {"name": "function.css"},
+                {"name": "header.css"}
+            ]
+        }
+    },{
+        "name": "manual.php",
+        "js": {
+            "files": [
+                {"name": "docs.js"},
+                {"name": "side-menu.js"},
+                {"name": "googlelogin.js"},
+                {"name": "socket.js"},
+                {"name": "header.js"}
+            ]
+        },
+        "css": {
+            "files": [
+                {"name": "table.css"},
+                {"name": "manual.css"},
+                {"name": "side-menu.css"},
+                {"name": "header.css"}
+            ]
+        }
+
+    },{
+        "name": "about.php",
+        "js": {
+            "files": [
+                {"name": "about.js"},
+                {"name": "radio.js"},
+                {"name": "dialog.js"},
+                {"name": "googlelogin.js"},
+                {"name": "socket.js"},
+                {"name": "header.js"}
+            ]
+        },
+        "css": {
+            "files": [
+                {"name": "about.css"},
+                {"name": "radio.css"},
+                {"name": "dialog.css"},
+                {"name": "header.css"}
+            ]
+        }
+    },{
+        "name": "code.php",
+        "js": {
+            "files": [
+                {"name": "code.js"},
+                {"name": "tabs.js"},
+                {"name": "keybinds.js"},
+                {"name": "socket.js"},
+                {"name": "file_manager.js"},
+                {"name": "googlelogin.js"}
+            ]
+        },
+        "css": {
+            "files": [
+                {"name": "code.css"}
+            ]
+        }
+    },{
+        "name": "editor.php",
+        "js": {
+            "files": [
+                {"name": "editor.js"},
+                {"name": "assets.js"},
+                {"name": "dialog.js"},
+                {"name": "runSim.js"},
+                {"name": "tutorial.js"},
+                {"name": "googlelogin.js"},
+                {"name": "header.js"},
+                {"name": "socket.js"},
+                {"name": "emoji.js"},
+                {"name": "chat.js"},
+                {"name": "blocks.js"}
+            ]
+        },
+        "css": {
+            "files": [
+                {"name": "sprite.css"},
+                {"name": "slider.css"},
+                {"name": "glad-card.css"},
+                {"name": "dialog.css"},
+                {"name": "chat.css"},
+                {"name": "header.css"},
+                {"name": "editor.css"}
+            ]
+        }
+    },{
+        "name": "chat.php",
+        "js": {
+            "files": [
+                {"name": "chat.js"},
+                {"name": "dialog.js"},
+                {"name": "emoji.js"},
+                {"name": "googlelogin.js"},
+                {"name": "header.js"},
+                {"name": "socket.js"}
+            ]
+        },
+        "css": {
+            "files": [
+                {"name": "chat.css"},
+                {"name": "dialog.css"},
+                {"name": "header.css"}
+            ]
+        }
+    },{
+        "name": "stats.php",
+        "js": {
+            "files": [
+                {"name": "stats.js"},
+                {"name": "stats_func.js"},
+                {"name": "side-menu.js"},
+                {"name": "dialog.js"},
+                {"name": "socket.js"},
+                {"name": "googlelogin.js"},
+                {"name": "header.js"}
+            ]
+        },
+        "css": {
+            "files": [
+                {"name": "side-menu.css"},
+                {"name": "table.css"},
+                {"name": "stats.css"},
+                {"name": "dialog.css"},
+                {"name": "header.css"}
+            ]
+        }
+    },{
+        "name": "tournament.php",
+        "js": {
+            "files": [
+                {"name": "assets.js"},
+                {"name": "glad-card.js"},
+                {"name": "runSim.js"},
+                {"name": "dialog.js"},
+                {"name": "tournament.js"},
+                {"name": "chat.js"},
+                {"name": "emoji.js"},
+                {"name": "socket.js"},
+                {"name": "googlelogin.js"},
+                {"name": "header.js"},
+                {"name": "blocks.js"}
+            ]
+        },
+        "css": {
+            "files": [
+                {"name": "dialog.css"},
+                {"name": "glad-card.css"},
+                {"name": "tournament.css"},
+                {"name": "chat.css"},
+                {"name": "header.css"}
+            ]
+        }
+    },{
+        "name": "profile.php",
+        "js": {
+            "files": [
+                {"name": "assets.js"},
+                {"name": "dropzone.js"},
+                {"name": "croppie.js"},
+                {"name": "profile-tourn.js"},
+                {"name": "chat.js"},
+                {"name": "glad-card.js"},
+                {"name": "profile.js"},
+                {"name": "dialog.js"},
+                {"name": "runSim.js"},
+                {"name": "checkboxes.js"},
+                {"name": "stats_func.js"},
+                {"name": "emoji.js"},
+                {"name": "socket.js"},
+                {"name": "googlelogin.js"},
+                {"name": "header.js"},
+                {"name": "blocks.js"}
+            ]
+        },
+        "css": {
+            "files": [
+                {"name": "profile.css"},
+                {"name": "glad-card.css"},
+                {"name": "dialog.css"},
+                {"name": "chat.css"},
+                {"name": "croppie.css"},
+                {"name": "slider.css"},
+                {"name": "checkboxes.css"},
+                {"name": "table2.css"},
+                {"name": "header.css"}
+            ]
+        }
+    },{
+        "name": "playback.php",
+        "js": {
+            "files": [
+                {"name": "phaser.js"},
+                {"name": "floatingText.js"},
+                {"name": "render.js"},
+                {"name": "assets.js"},
+                {"name": "dialog.js"},
+                {"name": "dropzone.js"},
+                {"name": "checkboxes.js"},
+                {"name": "playback.js"},
+                {"name": "socket.js"}
+            ]
+        },
+        "css": {
+            "files": [
+                {"name": "checkboxes.css"},
+                {"name": "dialog.css"},
+                {"name": "playback.css"}
+            ]
+        }
+    },{
+        "name": "creditos.php",
+        "js": {
+            "files": [
+                {"name": "googlelogin.js"},
+                {"name": "socket.js"},
+                {"name": "header.js"}
+            ]
+        },
+        "css": {
+            "files": [
+                {"name": "header.css"}
+            ]
+        }
+    },{
+        "name": "post.php",
+        "js": {
+            "files": [
+                {"name": "googlelogin.js"},
+                {"name": "socket.js"},
+                {"name": "header.js"},
+                {"name": "post.js"}
+            ]
+        },
+        "css": {
+            "files": [
+                {"name": "header.css"},
+                {"name": "post.css"}
+            ]
+        }
+    }]
+}

@@ -1,0 +1,39 @@
+{
+    "name": {
+        "default": "howManyEnemies",
+        "pt": "quantosInimigos",
+        "block": "Quanto inimigos vejo?"
+    },
+    "syntax": {
+        "c": "int howManyEnemies ( void );",
+        "python": "howManyEnemies()",
+        "blocks": "<block type='howmanyenemies'></block>"
+    },
+    "description": {
+        "long": "Retorna a quantidade de inimigos dentro do campo de visão do gladiador. Esta função não seleciona nenhum inimigo como alvo.",
+        "brief": "Retorna a quantidade de inimigos no campo de visão."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Inteiro contendo a quantidade de inimigos presentes no campo de visão do gladiador.",
+        "blocks": "Número contendo a quantidade de inimigos presentes no campo de visão do gladiador."
+    },
+    "sample": {
+        "c": "24.c",
+        "python": "24.py",
+        "blocks": "24.xml",
+        "explain": "24.txt"
+    },
+    "seealso": [
+        "doyouseeme",
+        "istargetvisible"
+    ],
+    "snippet": {
+        "c": "int ${1:num_enemies} = howManyEnemies();",
+        "python": "${1:num_enemies} = howManyEnemies()"
+    }
+}

@@ -1,0 +1,1 @@
+No exemplo o gladiador se move até o centro da arena e então fica rotacionando até que ele receba um ataque. Caso o ataque seja uma {fireball}, ele ficará queimado e fugirá com {teleport}. Caso contrário ele fica invisível com {ambush} e vira em direção ao ataque.

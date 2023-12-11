@@ -1,0 +1,1 @@
+No exemplo o gladiador realiza um percurso de ida e volta na arena. A variável volta controla se o gladiador está no trajeto de ida ou volta. Note que no trajeto de volta, como a chamada para {moveTo} está dentro de uma repetição, o gladiador fica preso nesse laço até que alcance seu destino.

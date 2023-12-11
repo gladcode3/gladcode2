@@ -1,0 +1,39 @@
+{
+    "name": {
+        "default": "getLastHitTime",
+        "pt": "tempoFuiAcertado",
+        "block": "[Tempo] do ataque recebido"
+    },
+    "syntax": {
+        "c": "float getLastHitTime ( void );",
+        "python": "getLastHitTime()",
+        "blocks": "<block type='get_lasthit'><field name='COMPLEMENT'>Time</field></block>"
+    },
+    "description": {
+        "long": "Retorna o tempo, em segundos, desde a última vez que o gladiador recebeu um ataque.",
+        "brief": "Retorna o tempo desde o último ataque recebido."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Float contendo o tempo desde a última vez que o gladiador recebeu um ataque.",
+        "blocks": "Número contendo o tempo desde a última vez que o gladiador recebeu um ataque."
+    },
+    "sample": {
+        "c": "11.c",
+        "python": "11.py",
+        "blocks": "11.xml",
+        "explain": "11.txt"
+    },
+    "seealso": [
+        "getlasthitangle",
+        "gethit"
+    ],
+    "snippet": {
+        "c": "float ${1:hit_time} = getLastHitTime();",
+        "python": "${1:hit_time} = getLastHitTime()"
+    }
+}

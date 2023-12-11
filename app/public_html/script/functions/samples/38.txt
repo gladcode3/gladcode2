@@ -1,0 +1,1 @@
+No exemplo o gladiador se move até o centro da arena, e uma vez que chegue lá começa a executar indefinidamente um percurso circular de costas.

@@ -1,0 +1,39 @@
+{
+    "name": {
+        "default": "block",
+        "pt": "bloqueio",
+        "block": "Bloquear"
+    },
+    "syntax": {
+        "c": "int block ( void );",
+        "python": "block()",
+        "blocks": "<block type='block'></block>"
+    },
+    "description": {
+        "long": "Causa o efeito <a href='manual.php#nav-efeito'>proteção</a> no gladiador, fazendo com que todo dano direto sofrido por ele seja reduzido. O dano será reduzido em uma porcentagem igual a (0.1 + STR/(STR+16)) * 10%, onde STR é a <a href='manual.php#nav-glad'>força</a> do gladiador. Caso o gladiador não esteja enxergando a fonte do dano recebido, o efeito da proteção é reduzido pela metade. O efeito de proteção sobre o gladiador possui duração de 7 segundos.",
+        "brief": "Aumenta a defesa do gladiador."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna True caso a habilidade tenha sido lançada com sucesso, caso contrário retorna False.",
+        "c": "Retorna 1 caso a habilidade tenha sido lançada com sucesso, caso contrário retorna 0.",
+        "blocks": "Retorna Verdadeiro caso a habilidade tenha sido lançada com sucesso, caso contrário retorna Falso. Por padrão o retorno deste bloco é ignorado."
+    },
+    "sample": {
+        "c": "4.c",
+        "python": "4.py",
+        "blocks": "4.xml",
+        "explain": "4.txt"
+    },
+    "seealso": [
+        "charge"
+    ],
+    "snippet": {
+        "c": "block();",
+        "python": "block()"
+    }
+}

@@ -1,0 +1,1 @@
+No exemplo o gladiador inicia o combate em nível 11, e na posição central, a seguir ele começa a girar procurando por oponentes para lançar {fireball}. Tudo isso enquanto atribuindo um valor alto à sua vida e pontos de habilidade.

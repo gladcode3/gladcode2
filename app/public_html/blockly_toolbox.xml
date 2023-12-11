@@ -1,0 +1,280 @@
+<xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
+    <category name="Lógica" colour="%{BKY_LOGIC_HUE}">
+        <block type="controls_if"></block>
+        <block type="logic_compare">
+            <field name="OP">EQ</field>
+        </block>
+        <block type="logic_operation">
+            <field name="OP">AND</field>
+        </block>
+        <block type="logic_negate"></block>
+    </category>
+    <category name="Repetições" colour="%{BKY_LOOPS_HUE}">
+        <block type="controls_repeat_ext">
+            <value name="TIMES">
+                <shadow type="math_number">
+                    <field name="NUM">10</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="controls_whileUntil">
+            <field name="MODE">WHILE</field>
+        </block>
+        <block type="controls_flow_statements">
+            <field name="FLOW">BREAK</field>
+        </block>
+    </category>
+    <category name="Matemática" colour="%{BKY_MATH_HUE}">
+        <block type="math_arithmetic">
+            <field name="OP">ADD</field>
+            <value name="A">
+                <shadow type="math_number">
+                    <field name="NUM">1</field>
+                </shadow>
+            </value>
+            <value name="B">
+                <shadow type="math_number">
+                    <field name="NUM">1</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="math_single">
+            <field name="OP">ROOT</field>
+            <value name="NUM">
+                <shadow type="math_number">
+                    <field name="NUM">9</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="math_trig">
+            <field name="OP">SIN</field>
+            <value name="NUM">
+                <shadow type="math_number">
+                    <field name="NUM">45</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="math_constant">
+            <field name="CONSTANT">PI</field>
+        </block>
+        <block type="math_round">
+            <field name="OP">ROUND</field>
+            <value name="NUM">
+                <shadow type="math_number">
+                    <field name="NUM">3.1</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="math_modulo">
+            <value name="DIVIDEND">
+                <shadow type="math_number">
+                    <field name="NUM">64</field>
+                </shadow>
+            </value>
+            <value name="DIVISOR">
+                <shadow type="math_number">
+                    <field name="NUM">10</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="math_random_int">
+        <value name="FROM">
+            <shadow type="math_number">
+                <field name="NUM">1</field>
+            </shadow>
+        </value>
+        <value name="TO">
+            <shadow type="math_number">
+                <field name="NUM">100</field>
+            </shadow>
+        </value>
+        </block>
+    </category>
+    <category name="Valores" colour="%{BKY_TEXTS_HUE}">
+        <block type="math_number">
+            <field name="NUM">0</field>
+        </block>
+        <block type="logic_boolean">
+            <field name="BOOL">TRUE</field>
+        </block>
+        <block type="logic_null"></block>
+        <block type="text">
+            <field name="TEXT"></field>
+        </block>
+        <block type="text_join">
+            <mutation items="2"></mutation>
+        </block>
+    </category>
+    <sep></sep>
+    <category name="Variáveis" colour="%{BKY_VARIABLES_HUE}" custom="VARIABLE"></category>
+    <category name="Funções" colour="%{BKY_PROCEDURES_HUE}" custom="PROCEDURE">
+        
+    </category>
+    <sep></sep>
+    <category name="gladCode" colour="#00638d">
+        <category name="Melhorias" colour="#3c9b64">
+            <block type="upgrade">
+                <value name="VALUE">
+                    <shadow type="math_number">
+                        <field name="NUM">5</field>
+                    </shadow>
+                </value>
+            </block>
+        </category>
+        <category name="Movimentação" colour="#bcbf33">
+            <block type="move">
+                <value name="X">
+                    <shadow type="math_number">
+                        <field name="NUM">0</field>
+                    </shadow>
+                </value>
+                <value name="Y">
+                    <shadow type="math_number">
+                        <field name="NUM">0</field>
+                    </shadow>
+                </value>
+            </block>
+            <block type="step"></block>
+            <block type="moveforward">
+                <value name="STEPS">
+                    <shadow type="math_number">
+                        <field name="NUM">5</field>
+                    </shadow>
+                </value>
+            </block>
+            <block type="turn">
+                <value name="X">
+                    <shadow type="math_number">
+                        <field name="NUM">0</field>
+                    </shadow>
+                </value>
+                <value name="Y">
+                    <shadow type="math_number">
+                        <field name="NUM">0</field>
+                    </shadow>
+                </value>
+            </block>
+            <block type="turnangle">
+                <value name="ANGLE">
+                    <shadow type="math_number">
+                        <field name="NUM">180</field>
+                    </shadow>
+                </value>
+            </block>
+        </category>
+        <category name="Ataque" colour="#aa5353">
+            <block type="melee"></block>
+            <block type="ranged">
+                <value name="X">
+                    <shadow type="math_number">
+                        <field name="NUM">0</field>
+                    </shadow>
+                </value>
+                <value name="Y">
+                    <shadow type="math_number">
+                        <field name="NUM">0</field>
+                    </shadow>
+                </value>
+            </block>
+        </category>
+        <category name="Informações" colour="#b79337">
+            <block type="get_info"></block>
+            <block type="gethit"></block>
+            <block type="get_lasthit"></block>
+            <block type="get_time"></block>
+            <block type="speak">
+                <value name="TEXT">
+                    <shadow type="text">
+                        <field name="TEXT">Olá Mundo!</field>
+                    </shadow>
+                </value>
+            </block>
+        </category>
+        <category name="Percepção" colour="#52b2b2">
+            <block type="is_status"></block>
+            <block type="get_enemy"></block>
+            <block type="get_target"></block>
+            <block type="issafe"></block>
+            <block type="getsaferadius"></block>
+            <block type="howmanyenemies"></block>
+            <block type="doyouseeme"></block>
+            <block type="getsimtime"></block>
+        </category>
+        <category name="Habilidades" colour="#7d52a8">
+            <block type="fireball">
+                <value name="X">
+                    <shadow type="math_number">
+                        <field name="NUM">0</field>
+                    </shadow>
+                </value>
+                <value name="Y">
+                    <shadow type="math_number">
+                        <field name="NUM">0</field>
+                    </shadow>
+                </value>
+            </block>
+            <block type="teleport">
+                <value name="X">
+                    <shadow type="math_number">
+                        <field name="NUM">0</field>
+                    </shadow>
+                </value>
+                <value name="Y">
+                    <shadow type="math_number">
+                        <field name="NUM">0</field>
+                    </shadow>
+                </value>
+            </block>
+            <block type="charge"></block>
+            <block type="block"></block>
+            <block type="assassinate">
+                <value name="X">
+                    <shadow type="math_number">
+                        <field name="NUM">0</field>
+                    </shadow>
+                </value>
+                <value name="Y">
+                    <shadow type="math_number">
+                        <field name="NUM">0</field>
+                    </shadow>
+                </value>
+            </block>
+            <block type="ambush"></block>
+        </category>
+        <category name="Matemática" colour="#5B67A5">
+            <block type="getdist">
+                <value name="X">
+                    <shadow type="math_number">
+                        <field name="NUM">0</field>
+                    </shadow>
+                </value>
+                <value name="Y">
+                    <shadow type="math_number">
+                        <field name="NUM">0</field>
+                    </shadow>
+                </value>
+            </block>
+            <block type="getangle">
+                <value name="X">
+                    <shadow type="math_number">
+                        <field name="NUM">0</field>
+                    </shadow>
+                </value>
+                <value name="Y">
+                    <shadow type="math_number">
+                        <field name="NUM">0</field>
+                    </shadow>
+                </value>
+            </block>
+        </category>
+        <category name="Itens" colour="#9eb553">
+            <block type="useitem"></block>
+            <block type="itemready"></block>
+            <block type="pot_hp"></block>
+            <block type="pot_ap"></block>
+            <block type="pot_high"></block>
+            <block type="pot_low"></block>
+            <block type="pot_xp"></block>
+        </category>
+    </category>
+</xml>

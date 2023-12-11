@@ -1,0 +1,1 @@
+Este exemplo demonstra a função setup de um gladiador, onde se atribui a ele o valor do atributo Agilidade, bem como os valores iniciais dos outros atributos básicos e o nome do gladiador.

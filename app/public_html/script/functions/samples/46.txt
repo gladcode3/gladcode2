@@ -1,0 +1,1 @@
+No exemplo o gladiador se movimenta pela arena em um padrão do qual se move para cima e então para a diagonal baixo-direita.

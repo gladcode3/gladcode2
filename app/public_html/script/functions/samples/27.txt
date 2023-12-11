@@ -1,0 +1,1 @@
+No exemplo o gladiador procura um inimigo e o ataca. Caso ele esteja qeimando o gladiador usa {ambush} para se esconder (para evitar ser alvo da {fireball}). Caso não encontre ele fica girando para procurar. Caso o lugar que ele esteja tenha gás tóxico, ele se dirige ao centro até estar em um lugar seguro.

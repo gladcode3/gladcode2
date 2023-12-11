@@ -1,0 +1,44 @@
+{
+    "name": {
+        "default": "getDist",
+        "pt": "pegaDistancia",
+        "block": "Distância para [Posição]"
+    },
+    "syntax": {
+        "c": "float getDist ( float x, float y );",
+        "python": "getDist(x, y)",
+        "blocks": "<block type='getdist'><field name='COMPLEMENT'>POSITION</field></block>"
+    },
+    "description": {
+        "long": "Retorna a distância entre o ponto definido pelas coordenadas x e y informadas por parãmetro e a localização do gladiador.",
+        "brief": "Retorna a distância até o ponto."
+    },
+    "param": {
+        "default": [
+            {"name": "x", "description": "Float contendo o valor da coordenada x do ponto."},
+            {"name": "y", "description": "Float contendo o valor da coordenada y do ponto."}
+        ],
+        "blocks": [
+            {"name": "x", "description": "Número contendo o valor da coordenada x do ponto."},
+            {"name": "y", "description": "Número contendo o valor da coordenada y do ponto."}
+        ]
+    },
+    "treturn": {
+        "default": "Float contendo a distância entre o gladiador e o ponto informado.",
+        "blocks": "Número contendo a distância entre o gladiador e o ponto informado."
+    },
+    "sample": {
+        "c": "12.c",
+        "python": "12.py",
+        "blocks": "12.xml",
+        "explain": "12.txt"
+    },
+    "seealso": [
+        "getangle",
+        "getdisttotarget"
+    ],
+    "snippet": {
+        "c": "float ${1:dist} = getDist(${2:X}, ${3:Y});",
+        "python": "${1:dist} = getDist(${2:X}, ${3:Y})"
+    }
+}

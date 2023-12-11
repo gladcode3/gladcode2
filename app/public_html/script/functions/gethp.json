@@ -1,0 +1,38 @@
+{
+    "name": {
+        "default": "getHp",
+        "pt": "pegaPv",
+        "block": "Pegar informação [Pontos de vida]"
+    },
+    "syntax": {
+        "c": "float getHp ( void );",
+        "python": "getHp()",
+        "blocks": "<block type='get_info'><field name='COMPLEMENT'>Hp</field></block>"
+    },
+    "description": {
+        "long": "Retorna a quantidade de pontos de vida restantes do gladiador.",
+        "brief": "Retorna os pontos de vida do gladiador."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Float contendo a quantidade de pontos de vida restantes do gladiador.",
+        "blocks": "Número contendo a quantidade de pontos de vida restantes do gladiador."
+    },
+    "sample": {
+        "c": "3.c",
+        "python": "3.py",
+        "blocks": "3.xml",
+        "explain": "3.txt"
+    },
+    "seealso": [
+        "getap"
+    ],
+    "snippet": {
+        "c": "float ${1:hp} = getHp();",
+        "python": "${1:hp} = getHp()"
+    }
+}

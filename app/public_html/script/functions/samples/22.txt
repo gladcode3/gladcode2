@@ -1,0 +1,1 @@
+No exemplo o gladiador se move em direção ao centro da arena. Ao encontrar um gladiador inimigo ele ataca. Ao ser atingido, caso ele não enxergue o alvo, e recua para trás por 4 segundos.

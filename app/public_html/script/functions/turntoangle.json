@@ -1,0 +1,44 @@
+{
+    "name": {
+        "default": "turnToAngle",
+        "pt": "viraParaAngulo",
+        "block": "Virar relativo [à arena]"
+    },
+    "syntax": {
+        "c": "int turnToAngle ( float angulo );",
+        "python": "turnToAngle(angulo)",
+        "blocks": "<block type='turnangle'><field name='COMPLEMENT'>ANGLE</field></block>"
+    },
+    "description": {
+        "long": "Rotaciona o gladiador de maneira que ele fique virado para o angulo informado no parâmetro. O ângulo informado deve seguir a <a href='manual.php#nav-sim'>convenção adotada pela simulação</a>. Caso a rotação necessária resulte em uma quantidade de graus maior que o gladiador consiga rotacionar em um intervalo de tempo (determinado pelo atributo <a href='manual.php#nav-glad'>velocidade de rotação</a>), ele irá rotacionar somente a quantidade que conseguir.",
+        "brief": "Rotaciona o gladiador para um ângulo."
+    },
+    "param": {
+        "default": [
+            {"name": "angulo", "description": "Float contendo o ângulo de destino do gladiador."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna True caso ao fim da rotação o gladiador ficou virado para o ponto informado, ou False caso contrário.",
+        "c": "Retorna 1 caso ao fim da rotação o gladiador ficou virado para o ponto informado, ou 0 caso contrário.",
+        "blocks": "Retorna Verdadeiro caso ao fim da rotação o gladiador ficou virado para o ponto informado, ou Falso caso contrário. Por padrão o retorno deste bloco é ignorado."
+    },
+    "sample": {
+        "c": "46.c",
+        "python": "46.py",
+        "blocks": "46.xml",
+        "explain": "46.txt"
+    },
+    "seealso": [
+        "turnto",
+        "turntolasthit",
+        "turnright",
+        "turnleft",
+        "turntotarget",
+        "turn"
+    ],
+    "snippet": {
+        "c": "turnToAngle(${1:angle});",
+        "python": "turnToAngle(${1:angle})"
+    }
+}

@@ -1,0 +1,40 @@
+{
+    "name": {
+        "default": "stepForward",
+        "pt": "passoFrente",
+        "block": "Passo para [Frente]"
+    },
+    "syntax": {
+        "c": "float stepForward ( void );",
+        "python": "stepForward()",
+        "blocks": "<block type='step'><field name='COMPLEMENT'>FORWARD</field></block>"
+    },
+    "description": {
+        "long": "Faz com que o gladiador se mova para frente. Ele irá mover-se a maior distância que conseguir dentro de um intervalo de tempo da simulação (determinado pela sua <a href='manual.php#nav-glad'>velocidade de movimento</a>). A função irá retornar a distância percorrida neste processo.",
+        "brief": "Move o gladiador para frente."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Float contendo a distância percorrida como resultado da execução da função.",
+        "blocks": "Número contendo a distância percorrida como resultado da execução da função. Por padrão o retorno deste bloco é ignorado."
+    },
+    "sample": {
+        "c": "39.c",
+        "python": "39.py",
+        "blocks": "39.xml",
+        "explain": "39.txt"
+    },
+    "seealso": [
+        "stepback",
+        "stepleft",
+        "stepright"
+    ],
+    "snippet": {
+        "c": "stepForward();",
+        "python": "stepForward()"
+    }
+}

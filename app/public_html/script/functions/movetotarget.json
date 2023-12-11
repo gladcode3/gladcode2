@@ -1,0 +1,41 @@
+{
+    "name": {
+        "default": "moveToTarget",
+        "pt": "moveParaAlvo",
+        "block": "Mover para [Alvo]"
+    },
+    "syntax": {
+        "c": "int moveToTarget ( void );",
+        "python": "moveToTarget()",
+        "blocks": "<block type='move'><field name='COMPLEMENT'>TARGET</field></block>"
+    },
+    "description": {
+        "long": "Faz com que o gladiador se mova para o ponto da arena onde está o alvo fixado. Primeiramente o gladiador vira-se na direção do alvo e após isso começa a se locomover em sua direção.",
+        "brief": "Move o gladiador em direção ao alvo."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna True caso o gladiador já esteja no ponto de destino, ou False caso contrário.",
+        "c": "Retorna 1 caso o gladiador já esteja no ponto de destino, ou 0 caso contrário.",
+        "blocks": "Retorna Verdadeiro caso o gladiador já esteja no ponto de destino, ou Falso caso contrário. Por padrão o retorno deste bloco é ignorado."
+    },
+    "sample": {
+        "c": "2.c",
+        "python": "2.py",
+        "blocks": "2.xml",
+        "explain": "2.txt"
+    },
+    "seealso": [
+        "moveto",
+        "turnto",
+        "turntotarget"
+    ],
+    "snippet": {
+        "c": "moveToTarget();",
+        "python": "moveToTarget()"
+    }
+}

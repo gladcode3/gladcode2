@@ -1,0 +1,39 @@
+{
+    "name": {
+        "default": "getSpeed",
+        "pt": "pegaVelocidade",
+        "block": "Pegar informação [Velocidade]"
+    },
+    "syntax": {
+        "c": "float getSpeed ( void );",
+        "python": "getSpeed()",
+        "blocks": "<block type='get_info'><field name='COMPLEMENT'>Speed</field></block>"
+    },
+    "description": {
+        "long": "Retorna o valor do <a href='manual.php#nav-glad'>atributo velocidade</a> do gladiador, em passos por segundo (p/s).",
+        "brief": "Retorna a velocidade do gladiador."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Float contendo a velocidade do gladiador em p/s.",
+        "blocks": "Número contendo a velocidade do gladiador em p/s."
+    },
+    "sample": {
+        "c": "2.c",
+        "python": "2.py",
+        "blocks": "2.xml",
+        "explain": "2.txt"
+    },
+    "seealso": [
+        "gethead",
+        "gettargetspeed"
+    ],
+    "snippet": {
+        "c": "float ${1:speed} = getSpeed();",
+        "python": "${1:speed} = getSpeed()"
+    }
+}

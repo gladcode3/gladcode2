@@ -1,0 +1,41 @@
+{
+    "name": {
+        "default": "isItemReady",
+        "pt": "itemPronto",
+        "block": "Item disponível"
+    },
+    "syntax": {
+        "c": "int isItemReady ( char *item );",
+        "python": "isItemReady(item)",
+        "blocks": "<block type='itemready'></block>"
+    },
+    "description": {
+        "long": "Verifica se o item informado no argumento está pronto para ser usado. O item estará pronto caso ele tenha sido encomendado no apotecário e ainda não tenha sido usado na presente batalha. Para encomendar um item, é necessário pagar seu custo em moedas de prata, possuir o apotecário em nível suficiente, e possui um compartimento livre de itens consumíveis em seu perfil. Para saber mais sobre o uso do apotecário e a lista dos itens disponíveis, visite a <a href='manual#item'>seção itens do manual</a>.",
+        "brief": "Verifica se o item está disponível para ser usado."
+    },
+    "param": {
+        "default": [
+            {"name": "item", "description": "String contendo o identificdor do item a ser verificado."}
+        ],
+        "blocks": [
+            {"name": "item", "description": "Texto ou bloco de item a ser verificado."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna True caso o item esteja pronto para ser usado, caso contrário retorna False.",
+        "c": "Retorna 1 caso o item esteja pronto para ser usado, caso contrário retorna 0.",
+        "blocks": "Retorna Verdadeiro caso o item esteja pronto para ser usado, caso contrário retorna Falso."
+    },
+    "sample": {
+        "c": "47.c",
+        "python": "47.py",
+        "blocks": "47.xml",
+        "explain": "47.txt"
+    },
+    "seealso": [
+    ],
+    "snippet": {
+        "c": "float ${1:ready} = isItemReady(${2:item});",
+        "python": "${1:ready} = isItemReady(${2:item})"
+    }
+}

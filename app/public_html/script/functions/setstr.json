@@ -1,0 +1,36 @@
+{
+    "name": {
+        "default": "setSTR",
+        "pt": "mudaFOR"
+    },
+    "syntax": {
+        "c": "void setSTR ( int valor );",
+        "python": "setSTR(valor)"
+    },
+    "description": {
+        "long": "Atribui um valor para o atributo Força (STR) do gladiador. Esta função somente pode ser chamada dentro da função setup.",
+        "brief": "Atribui um valor para o atributo Força (STR) do gladiador."
+    },
+    "param": {
+        "default": [
+            {"name": "valor", "description": "Inteiro contendo o valor que será atribuído ao atributo Força."}
+        ]
+    },
+    "treturn": {
+        "default": "A função não possui retorno."
+    },
+    "sample": {
+        "c": "36.c",
+        "python": "36.py",
+        "explain": "36.txt"
+    },
+    "seealso": [
+        "setagi",
+        "setint",
+        "setname"
+    ],
+    "snippet": {
+        "c": "setSTR(${1:value});",
+        "python": "setSTR(${1:value})"
+    }
+}

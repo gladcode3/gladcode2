@@ -1,0 +1,28 @@
+version: '3'
+services:
+    mysql:
+        image: gladcode-mysql
+        build: ./build/mysql
+        restart: on-failure
+        environment:
+            - MYSQL_DATABASE=${MYSQL_DATABASE}
+            - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+        ports:
+            - '127.0.0.1:3306:3306'
+        volumes:
+            - mysql:/var/lib/mysql
+            - ./:/app
+    apache:
+        image: gladcode-apache
+        build: ./build/apache
+        restart: on-failure
+        ports:
+            - '80:80'
+        volumes:
+            - ./app/public_html:/var/www/html
+            - vendor:/var/www/html/vendor
+volumes:
+    mysql:
+    vendor:
+    node_modules-test:
+    node_modules-socket:

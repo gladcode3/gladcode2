@@ -1,0 +1,1 @@
+No exemplo o gladiador se teletransporta até o centro da arena, e então fica procurando por um inimigo. Quando o encontra lança {fireball}, ou um ataque à distância caso não tenha pontos de habilidade suficientes.

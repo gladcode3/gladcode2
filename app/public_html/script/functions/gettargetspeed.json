@@ -1,0 +1,41 @@
+{
+    "name": {
+        "default": "getTargetSpeed",
+        "pt": "pegaVelocidadeAlvo",
+        "block": "Pegar [Velocidade] do alvo"
+    },
+    "syntax": {
+        "c": "float getTargetSpeed ( void );",
+        "python": "getTargetSpeed()",
+        "blocks": "<block type='get_target'><field name='COMPLEMENT'>Speed</field></block>"
+    },
+    "description": {
+        "long": "Retorna o valor do <a href='manual.php#nav-glad'>atributo velocidade</a> do gladiador selecionado como alvo, em passos por segundo (p/s).",
+        "brief": "Retorna a velocidade do alvo."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Float contendo a velocidade do alvo, em p/s, ou False caso o alvo não esteja dentro do campo de visão do gladiador.",
+        "c": "Float contendo a velocidade do alvo, em p/s, ou -1 caso o alvo não esteja dentro do campo de visão do gladiador.",
+        "blocks": "Número contendo a velocidade do alvo, em p/s, ou Falso caso o alvo não esteja dentro do campo de visão do gladiador."
+    },
+    "sample": {
+        "c": "2.c",
+        "python": "2.py",
+        "blocks": "2.xml",
+        "explain": "2.txt"
+    },
+    "seealso": [
+        "getspeed",
+        "gettargethead",
+        "gettargethealth"
+    ],
+    "snippet": {
+        "c": "float ${1:target_speed} = getTargetSpeed();",
+        "python": "${1:target_speed} = getTargetSpeed()"
+    }
+}

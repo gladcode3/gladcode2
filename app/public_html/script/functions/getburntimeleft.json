@@ -1,0 +1,40 @@
+{
+    "name": {
+        "default": "getBurnTimeLeft",
+        "pt": "tempoQueimadura",
+        "block": "Tempo restante [Queimadura]"
+    },
+    "syntax": {
+        "c": "float getBurnTimeLeft ( void );",
+        "python": "getBurnTimeLeft()",
+        "blocks": "<block type='get_time'><field name='COMPLEMENT'>Burn</field></block>"
+    },
+    "description": {
+        "long": "Retorna o tempo restante até que o efeito <a href='manual.php#nav-efeito'>queimadura</a> expire.",
+        "brief": "Retorna o tempo restante para expirar o efeito Queimadura."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Float contendo o tempo restante até o efeito queimadura expirar.",
+        "blocks": "Número contendo o tempo restante até o efeito queimadura expirar."
+    },
+    "sample": {
+        "c": "10.c",
+        "python": "10.py",
+        "blocks": "10.xml",
+        "explain": "10.txt"
+    },
+    "seealso": [
+        "getblocktimeleft",
+        "getambushtimeleft",
+        "isburning"
+    ],
+    "snippet": {
+        "c": "float ${1:burn_time} = getBurnTimeLeft();",
+        "python": "${1:burn_time} = getBurnTimeLeft()"
+    }
+}

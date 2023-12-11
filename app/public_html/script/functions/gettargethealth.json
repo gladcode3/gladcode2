@@ -1,0 +1,40 @@
+{
+    "name": {
+        "default": "getTargetHealth",
+        "pt": "pegaSaudeAlvo",
+        "block": "Pegar [Saúde] do alvo"
+    },
+    "syntax": {
+        "c": "float getTargetHealth ( void );",
+        "python": "getTargetHealth()",
+        "blocks": "<block type='get_target'><field name='COMPLEMENT'>Health</field></block>"
+    },
+    "description": {
+        "long": "Retorna a vida que o alvo selecionado possui. O valor retornado não é a quantidade de pontos de vida do alvo, mas a razão entre a quantidade atual de pontos de vida e o total. Por consequência sempre será um valor entre 0 e 1. Embora não se saiba a quantidade exata de pontos de vida do alvo, pode-se ter uma noção de sua condição de saúde utilizando esta função.",
+        "brief": "Retorna a vida do alvo."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Float contendo a razão entre a vida atual e a total do alvo (entre 0 e 1).",
+        "blocks": "Número contendo a razão entre a vida atual e a total do alvo (entre 0 e 1)."
+    },
+    "sample": {
+        "c": "24.c",
+        "python": "24.py",
+        "blocks": "24.xml",
+        "explain": "24.txt"
+    },
+    "seealso": [
+        "gethp",
+        "gettargetspeed",
+        "gettargethead"
+    ],
+    "snippet": {
+        "c": "float ${1:target_health} = getTargetHealth();",
+        "python": "${1:target_health} = getTargetHealth()"
+    }
+}

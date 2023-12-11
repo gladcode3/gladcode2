@@ -1,0 +1,38 @@
+{
+    "name": {
+        "default": "getAp",
+        "pt": "pegaPh",
+        "block": "Pegar informação [Pontos de habilidade]"
+    },
+    "syntax": {
+        "c": "float getAp ( void );",
+        "python": "getAp()",
+        "blocks": "<block type='get_info'><field name='COMPLEMENT'>Ap</field></block>"
+    },
+    "description": {
+        "long": "Retorna a quantidade de pontos de habilidade restantes do gladiador.",
+        "brief": "Retorna os pontos de habilidade do gladiador."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Float contendo a quantidade de pontos de habilidade restantes do gladiador.",
+        "blocks": "Número contendo a quantidade de pontos de habilidade restantes do gladiador."
+    },
+    "sample": {
+        "c": "7.c",
+        "python": "7.py",
+        "blocks": "7.xml",
+        "explain": "7.txt"
+    },
+    "seealso": [
+        "gethp"
+    ],
+    "snippet": {
+        "c": "float ${1:ap} = getAp();",
+        "python": "${1:ap} = getAp()"
+    }
+}

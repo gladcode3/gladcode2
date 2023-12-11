@@ -1,0 +1,36 @@
+{
+    "name": {
+        "default": "setINT",
+        "pt": "mudaINT"
+    },
+    "syntax": {
+        "c": "void setINT ( int valor );",
+        "python": "setINT(valor)"
+    },
+    "description": {
+        "long": "Atribui um valor para o atributo Inteligência (INT) do gladiador. Esta função somente pode ser chamada dentro da função setup.",
+        "brief": "Atribui um valor para o atributo Inteligência (INT) do gladiador."
+    },
+    "param": {
+        "default": [
+            {"name": "valor", "description": "Inteiro contendo o valor que será atribuído ao atributo Inteligência."}
+        ]
+    },
+    "treturn": {
+        "default": "A função não possui retorno."
+    },
+    "sample": {
+        "c": "36.c",
+        "python": "36.py",
+        "explain": "36.txt"
+    },
+    "seealso": [
+        "setstr",
+        "setagi",
+        "setname"
+    ],
+    "snippet": {
+        "c": "setINT(${1:value});",
+        "python": "setINT(${1:value})"
+    }
+}

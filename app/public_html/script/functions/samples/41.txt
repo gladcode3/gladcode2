@@ -1,0 +1,1 @@
+No exemplo o gladiador tenta se esquivar locomovendo-se para a direita caso tenha recebido um ataque nos últimos 2 segundos. Caso contrário ele procura por um inimigo próximo e o ataca. Caso não encontre inimigos ele fica rotacionando no sentido horário.

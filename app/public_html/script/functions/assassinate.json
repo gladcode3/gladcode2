@@ -1,0 +1,44 @@
+{
+    "name": {
+        "default": "assassinate",
+        "pt": "assassinar",
+        "block": "Assassinar"
+    },
+    "syntax": {
+        "c": "int assassinate ( float x, float y );",
+        "python": "assassinate(x, y)",
+        "blocks": "<block type='assassinate'></block>"
+    },
+    "description": {
+        "long": "Dispara um ataque à distância no ponto definido pelas coordenadas x e y recebidas como parâmetro. O projétil arremessado viaja com velocidade 20 p/s. Caso o gladiador não possua um alvo fixado, ou o alvo não esteja visível a função retorna 0. Este ataque possui potencial de causar dano adicional. Caso o alvo não esteja enxergando o gladiador ou o alvo esteja <a href='manual.php#nav-efeito'>atordoado</a> a habilidade causa dano de 200% do <a href='manual.php#nav-attr'>atributo Precisão</a> do gladiador, e caso o alvo não esteja enxergando o gladiador e esteja atordoado a habilidade causa dano de 400% do atributo Precisão.",
+        "brief": "Dispara um ataque que pode causar dano e efeito adicional no alvo."
+    },
+    "param": {
+        "default": [
+            {"name": "x", "description": "Float contendo o valor da coordenada x do ponto alvo."},
+            {"name": "y", "description": "Float contendo o valor da coordenada y do ponto alvo."}
+        ],
+        "blocks": [
+            {"name": "x", "description": "Número contendo o valor da coordenada x do ponto alvo."},
+            {"name": "y", "description": "Número contendo o valor da coordenada y do ponto alvo."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna True caso a habilidade tenha sido lançada com sucesso, caso contrário retorna False.",
+        "c": "Retorna 1 caso a habilidade tenha sido lançada com sucesso, caso contrário retorna 0.",
+        "blocks": "Retorna Verdadeiro caso a habilidade tenha sido lançada com sucesso, caso contrário retorna Falso. Por padrão o retorno deste bloco é ignorado."
+    },
+    "sample": {
+        "c": "1.c",
+        "python": "1.py",
+        "blocks": "1.xml",
+        "explain": "1.txt"
+    },
+    "seealso": [
+        "ambush"
+    ],
+    "snippet": {
+        "c": "assassinate(${1:X}, ${2:Y});",
+        "python": "assassinate(${1:X}, ${2:Y})"
+    }
+}

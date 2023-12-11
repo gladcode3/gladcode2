@@ -1,0 +1,43 @@
+{
+    "name": {
+        "default": "isSlowed",
+        "pt": "estaLento",
+        "block": "Alvo está [Lento]?"
+    },
+    "syntax": {
+        "c": "int isSlowed ( void );",
+        "python": "isSlowed()",
+        "blocks": "<block type='is_status'><field name='COMPLEMENT'>Slowed</field></block>"
+    },
+    "description": {
+        "long": "A função verifica se o alvo selecionado pelo gladiador possui o efeito <a href='manual#nav-efeito'>movimentação</a>, e este efeito é negativo, indicando que o alvo está mais lento que o normal.",
+        "brief": "Verifica se o alvo está lento."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna True caso o alvo esteja no campo de visão do gladiador, possua o efeito movimentação e este efeito seja negativo, caso contrário retorna False.",
+        "c": "Retorna 1 caso o alvo esteja no campo de visão do gladiador, possua o efeito movimentação e este efeito seja negativo, caso contrário retorna 0.",
+        "blocks": "Retorna Verdadeiro caso o alvo esteja no campo de visão do gladiador, possua o efeito movimentação e este efeito seja negativo, caso contrário retorna Falso."
+    },
+    "sample": {
+        "c": "31.c",
+        "python": "31.py",
+        "blocks": "31.xml",
+        "explain": "31.txt"
+    },
+    "seealso": [
+        "isprotected",
+        "isrunning",
+        "isburning",
+        "isstunned",
+        "getspeed"
+    ],
+    "snippet": {
+        "c": "int ${1:slowed} = isSlowed();",
+        "python": "${1:slowed} = isSlowed()"
+    }
+}

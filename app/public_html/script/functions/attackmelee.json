@@ -1,0 +1,37 @@
+{
+    "name": {
+        "default": "attackMelee",
+        "pt": "ataqueCorpo",
+        "block": "Ataque Corpo-a-corpo"
+    },
+    "syntax": {
+        "c": "void attackMelee ( void );",
+        "python": "attackMelee()",
+        "blocks": "<block type='melee'></block>"
+    },
+    "description": {
+        "long": "Realiza um ataque corpo-a-corpo. Todos gladiadores inimigos que estiverem à uma distância de até 2 passos e num arco de 180 graus da frente do gladiador atacante são acertados. Todos gladiadores acertados pelo ataque recebem dano igual ao valor do <a href='manual.php#nav-glad'>atributo dano físico</a> do gladiador atacante.",
+        "brief": "Realiza um ataque corpo-a-corpo."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "A função não possui retorno."
+    },
+    "sample": {
+        "c": "2.c",
+        "python": "2.py",
+        "blocks": "2.xml",
+        "explain": "2.txt"
+    },
+    "seealso": [
+        "attackranged"
+    ],
+    "snippet": {
+        "c": "attackMelee();",
+        "python": "attackMelee()"
+    }
+}

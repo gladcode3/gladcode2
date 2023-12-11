@@ -1,0 +1,43 @@
+{
+    "name": {
+        "default": "getAngle",
+        "pt": "pegaAngulo",
+        "block": "Ângulo para"
+    },
+    "syntax": {
+        "c": "float getAngle ( float x, float y );",
+        "python": "getAngle(x, y)",
+        "blocks": "<block type='getangle'></block>"
+    },
+    "description": {
+        "long": "Retorna o ângulo entre o ponto definido pelas coordenadas x e y informadas por parãmetro e a localização do gladiador. O ângulo retornado será um valor entre 0 e 360, onde 0 indica a direção que o gladiador está olhando. O ângulo cresce no sentido horário.",
+        "brief": "Retorna o ângulo até o ponto."
+    },
+    "param": {
+        "default": [
+            {"name": "x", "description": "Float contendo o valor da coordenada x do ponto."},
+            {"name": "y", "description": "Float contendo o valor da coordenada y do ponto."}
+        ],
+        "blocks": [
+            {"name": "x", "description": "Número contendo o valor da coordenada x do ponto."},
+            {"name": "y", "description": "Número contendo o valor da coordenada y do ponto."}
+        ]
+    },
+    "treturn": {
+        "default": "Float contendo o ângulo entre o gladiador e o ponto informado.",
+        "blocks": "Número contendo o ângulo entre o gladiador e o ponto informado."
+    },
+    "sample": {
+        "c": "9.c",
+        "python": "9.py",
+        "blocks": "9.xml",
+        "explain": "9.txt"
+    },
+    "seealso": [
+        "getdist"
+    ],
+    "snippet": {
+        "c": "float ${1:angle} = getAngle(${2:X}, ${3:Y});",
+        "python": "${1:angle} = getAngle(${2:X}, ${3:Y})"
+    }
+}

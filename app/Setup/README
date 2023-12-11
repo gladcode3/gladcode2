@@ -1,0 +1,24 @@
+
+### crontab with nano
+export VISUAL=nano; crontab -e
+
+0 4 * * * /home/gladcode/script/backup_database.sh
+0 4 * * * /home/gladcode/script/remove_temp_dir.sh
+0 4 * * * /home/gladcode/script/push_logs.sh
+0 4 * * * php /home/gladcode/script/remove_old_battles.php
+
+### quando tiver que recriar o server, e criar a pasta temp, tem que dar chown gladcode nela
+
+### tem que liberar a porta 3000 no cwp por causa do node
+
+### configurar o rclone
+https://www.techrepublic.com/article/how-to-sync-from-linux-to-google-drive-with-rclone/
+infos estão em API no console do google
+
+### node_install tem que ser executado na pasta node
+### tem que criar o config.json na pasta node pra conectar no socket.io usando o domínio correto e chaves ssh
+
+### se for localhost, config.json tem que ser assim:
+###{
+###    "protocol": "http"
+###}

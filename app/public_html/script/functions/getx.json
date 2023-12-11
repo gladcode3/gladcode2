@@ -1,0 +1,40 @@
+{
+    "name": {
+        "default": "getX",
+        "pt": "pegaX",
+        "block": "Pegar informação [Coordenada X]"
+    },
+    "syntax": {
+        "c": "float getX ( void );",
+        "python": "getX()",
+        "blocks": "<block type='get_info'><field name='COMPLEMENT'>X</field></block>"
+    },
+    "description": {
+        "long": "Retorna o valor da coordenada x do gladiador. O conjunto de coordenadas x e y formam o ponto de localização do gladiador na <a href='manual#nav-sim'>arena</a>.",
+        "brief": "Retorna a coordenada x do gladiador."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Float contendo o valor da coordenada x do gladiador.",
+        "blocks": "Número contendo o valor da coordenada x do gladiador."
+    },
+    "sample": {
+        "c": "25.c",
+        "python": "25.py",
+        "blocks": "25.xml",
+        "explain": "25.txt"
+    },
+    "seealso": [
+        "gety",
+        "gettargetx",
+        "gettargety"
+    ],
+    "snippet": {
+        "c": "float ${1:x} = getX();",
+        "python": "${1:x} = getX()"
+    }
+}

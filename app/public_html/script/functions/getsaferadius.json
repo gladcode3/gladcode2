@@ -1,0 +1,40 @@
+{
+    "name": {
+        "default": "getSafeRadius",
+        "pt": "pegaRaioSeguro",
+        "block": "Raio seguro"
+    },
+    "syntax": {
+        "c": "float getSafeRadius ( void );",
+        "python": "getSafeRadius()",
+        "blocks": "<block type='getsaferadius'></block>"
+    },
+    "description": {
+        "long": "Retorna a distância do centro da arena até a borda da <a href='manual.php#nav-sim'>nuvem tóxica</a>. Como o gás se espalha de forma circular, comparar a distância do gladiador até o centro com o retorno desta função é uma maneira fácil de determinar o quão próximo o gladiador está de entrar na nuvem tóxica.",
+        "brief": "Retorna o raio da área livre de nuvem tóxica."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Float contendo a distância do centro da arena até a borda da nuvem tóxica.",
+        "blocks": "Número contendo a distância do centro da arena até a borda da nuvem tóxica."
+    },
+    "sample": {
+        "c": "21.c",
+        "python": "21.py",
+        "blocks": "21.xml",
+        "explain": "21.txt"
+    },
+    "seealso": [
+        "issafehere",
+        "issafethere",
+        "getdist"
+    ],
+    "snippet": {
+        "c": "float ${1:safe_radius} = getSafeRadius();",
+        "python": "${1:safe_radius} = getSafeRadius()"
+    }
+}

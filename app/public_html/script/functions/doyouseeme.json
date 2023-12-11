@@ -1,0 +1,40 @@
+{
+    "name": {
+        "default": "doYouSeeMe",
+        "pt": "voceMeVe",
+        "block": "Inimigo me enxerga?"
+    },
+    "syntax": {
+        "c": "int doYouSeeMe ( void );",
+        "python": "doYouSeeMe()",
+        "blocks": "<block type='doyouseeme'></block>"
+    },
+    "description": {
+        "long": "Verifica se o alvo selecionado está enxergando o gladiador. O alvo enxerga o gladiador caso o gladiador esteja dentro do campo de visão dele.",
+        "brief": "Descobre se o alvo enxerga o gladiador."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna True caso o gladiador esteja no campo de visão do alvo selecionado. Caso não esteja, ou o alvo selecionado não esteja no campo de visão do gladiador, retorna False.",
+        "c": "Retorna 1 caso o gladiador esteja no campo de visão do alvo selecionado. Caso não esteja, ou o alvo selecionado não esteja no campo de visão do gladiador, retorna 0.",
+        "blocks": "Retorna Verdadeiro caso o gladiador esteja no campo de visão do alvo selecionado. Caso não esteja, ou o alvo selecionado não esteja no campo de visão do gladiador, retorna Falso."
+    },
+    "sample": {
+        "c": "1.c",
+        "python": "1.py",
+        "blocks": "1.xml",
+        "explain": "1.txt"
+    },
+    "seealso": [
+        "istargetvisible",
+        "howmanyenemies"
+    ],
+    "snippet": {
+        "c": "int ${1:seen} = doYouSeeMe();",
+        "python": "${1:seen} = doYouSeeMe()"
+    }
+}

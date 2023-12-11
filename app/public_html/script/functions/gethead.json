@@ -1,0 +1,39 @@
+{
+    "name": {
+        "default": "getHead",
+        "pt": "pegaDirecao",
+        "block": "Pegar informação [Direção]"
+    },
+    "syntax": {
+        "c": "float getHead ( void );",
+        "python": "getHead()",
+        "blocks": "<block type='get_info'><field name='COMPLEMENT'>Head</field></block>"
+    },
+    "description": {
+        "long": "Retorna o ângulo da direção que o gladiador está posicionado, de acordo com a <a href='manual.php#nav-sim'>convenção da simulação</a>.",
+        "brief": "Retorna a direção do gladiador."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Float contendo o ângulo que o gladiador está direcionado.",
+        "blocks": "Número contendo o ângulo que o gladiador está direcionado."
+    },
+    "sample": {
+        "c": "14.c",
+        "python": "14.py",
+        "blocks": "14.xml",
+        "explain": "14.txt"
+    },
+    "seealso": [
+        "getspeed",
+        "gettargethead"
+    ],
+    "snippet": {
+        "c": "float ${1:head} = getHead();",
+        "python": "${1:head} = getHead()"
+    }
+}

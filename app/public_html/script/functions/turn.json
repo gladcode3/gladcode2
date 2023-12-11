@@ -1,0 +1,44 @@
+{
+    "name": {
+        "default": "turn",
+        "pt": "vira",
+        "block": "Virar relativo [ao gladiador]"
+    },
+    "syntax": {
+        "c": "void turn ( float angulo );",
+        "python": "turn(angulo)",
+        "blocks": "<block type='turnangle'><field name='COMPLEMENT'>TURN</field></block>"
+    },
+    "description": {
+        "long": "Rotaciona o gladiador uma quantidade de graus determinada pelo parâmetro. Caso o ângulo seja negativo o gladiador irá rotacionar no sentido anti-horário, ou no sentido horário caso seja positivo. O gladiador ficará travado na ação até que complete toda a rotação. Isto pode levar mais que um intervalo de tempo, dependendo do atributo <a href='manual.php#nav-glad'>velocidade de rotação</a>).",
+        "brief": "Rotaciona o gladiador."
+    },
+    "param": {
+        "default": [
+            {"name": "angulo", "description": "Float contendo o ângulo que deseja-se rotacionar."}
+        ],
+        "blocks": [
+            {"name": "angulo", "description": "Número contendo o ângulo que deseja-se rotacionar."}
+        ]
+    },
+    "treturn": {
+        "default": "A função não possui retorno."
+    },
+    "sample": {
+        "c": "42.c",
+        "python": "42.py",
+        "blocks": "42.xml",
+        "explain": "42.txt"
+    },
+    "seealso": [
+        "turnto",
+        "turntolasthit",
+        "turnright",
+        "turnleft",
+        "turntotarget"
+    ],
+    "snippet": {
+        "c": "turn(${1:angle});",
+        "python": "turn(${1:angle})"
+    }
+}

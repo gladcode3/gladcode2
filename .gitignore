@@ -1,0 +1,11 @@
+.env
+app/public_html/logs/*
+app/public_html/profpics/*
+build/mysql/database.sql
+node_modules
+vendor
+config.json
+app/user/*
+temp/*
+app/public_html/PHPMailer-master
+app/public_html/sprite/Universal-LPC-spritesheet

@@ -1,0 +1,44 @@
+{
+    "name": {
+        "default": "fireball",
+        "pt": "bolaFogo",
+        "block": "Bola de fogo"
+    },
+    "syntax": {
+        "c": "int fireball ( float x, float y );",
+        "python": "fireball(x, y)",
+        "blocks": "<block type='fireball'></block>"
+    },
+    "description": {
+        "long": "Vira o gladiador para o ponto definido pelas coordenadas x e y recebidas como parâmetro e então arremessa um projétil flamejante em direção ao ponto. Caso o gladiador não consiga terminar sua rotação até o ponto (de acordo com sua <a href='manual.php#nav-glad'>velocidade de rotação</a>, a habilidade não é lançada. Quando a habilidade é lançada, um projétil é arremessado a partir do ponto do gladiador atacante e percorre a arena com velocidade 10 passos por segundo (p/s) em direção ao ponto do alvo. Caso o projétil entre em contato com qualquer gladiador durante seu percurso, ele interrompe seu percurso e causa dano igual a 60% do valor do atributo <a href='manual.php#nav-attr'>Poder Mágico</a> do gladiador que disparou o projétil no gladiador acertado. Além disso, todos os gladiadores num raio de 2 passos do ponto de impacto do projétil pegam fogo, recebendo o efeito <a href='manual.php#nav-efeito'>queimadura</a> durante 4 segundos. O dano total causado pela queimadura será de 200% do Poder Mágico do gladiador que disparou o projétil. Gladiadores mais afastados do ponto central do impacto recebem proporcionalmente menos dano.",
+        "brief": "Arremessa um projétil flamejante."
+    },
+    "param": {
+        "default": [
+            {"name": "x", "description": "Float contendo o valor da coordenada x do ponto alvo."},
+            {"name": "y", "description": "Float contendo o valor da coordenada y do ponto alvo."}
+        ],
+        "blocks": [
+            {"name": "x", "description": "Número contendo o valor da coordenada x do ponto alvo."},
+            {"name": "y", "description": "Número contendo o valor da coordenada y do ponto alvo."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna True caso a habilidade tenha sido lançada com sucesso, caso contrário retorna False.",
+        "c": "Retorna 1 caso a habilidade tenha sido lançada com sucesso, caso contrário retorna 0.",
+        "blocks": "Retorna Verdadeiro caso a habilidade tenha sido lançada com sucesso, caso contrário retorna Falso. Por padrão o retorno deste bloco é ignorado."
+    },
+    "sample": {
+        "c": "7.c",
+        "python": "7.py",
+        "blocks": "7.xml",
+        "explain": "7.txt"
+    },
+    "seealso": [
+        "teleport"
+    ],
+    "snippet": {
+        "c": "fireball(${1:X}, ${2:Y});",
+        "python": "fireball(${1:X}, ${2:Y})"
+    }
+}

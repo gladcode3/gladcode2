@@ -1,0 +1,36 @@
+{
+    "name": {
+        "default": "setHp",
+        "pt": "mudaPv"
+    },
+    "syntax": {
+        "c": "void setHp ( float valor );",
+        "python": "setHp(valor)"
+    },
+    "description": {
+        "long": "Atribui um valor para os pontos de vida do gladiador. O máximo de pontos de vida que o gladiador pode possuir continua sendo limitado pelas restrições normais. Esta função somente pode ser usada no editor. O editor não permite que o código do gladiador seja salvo com esta função. O objetivo desta função é puramente para realização de testes.",
+        "brief": "Modifica os pontos de vida do gladiador."
+    },
+    "param": {
+        "default": [
+            {"name": "valor", "description": "Float contendo o valor que será atribuído aos pontos de vida do gladiador."}
+        ]
+    },
+    "treturn": {
+        "default": "A função não possui retorno."
+    },
+    "sample": {
+        "c": "33.c",
+        "python": "33.py",
+        "explain": "33.txt"
+    },
+    "seealso": [
+        "setap",
+        "setposition",
+        "lvlup"
+    ],
+    "snippet": {
+        "c": "setHp(${1:value});",
+        "python": "setHp(${1:value})"
+    }
+}

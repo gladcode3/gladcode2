@@ -1,0 +1,40 @@
+{
+    "name": {
+        "default": "getHit",
+        "pt": "fuiAcertado",
+        "block": "Fui acertado?"
+    },
+    "syntax": {
+        "c": "int getHit ( void );",
+        "python": "getHit()",
+        "blocks": "<block type='gethit'></block>"
+    },
+    "description": {
+        "long": "Verifica se o gladiador recebeu um ataque desde a última vez que a função foi chamada.",
+        "brief": "Descobre se o gladiador foi atacado."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna True caso o gladiador tenha recebido ataque desde a última chamada desta função, ou False caso contrário.",
+        "c": "Retorna 1 caso o gladiador tenha recebido ataque desde a última chamada desta função, ou 0 caso contrário.",
+        "blocks": "Retorna Verdadeiro caso o gladiador tenha recebido ataque desde a última vez que este bloco foi executado, ou Falso caso contrário."
+    },
+    "sample": {
+        "c": "16.c",
+        "python": "16.py",
+        "blocks": "16.xml",
+        "explain": "16.txt"
+    },
+    "seealso": [
+        "getlasthittime",
+        "getlasthitangle"
+    ],
+    "snippet": {
+        "c": "int ${1:hit} = getHit();",
+        "python": "${1:hit} = getHit()"
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "name": {
+        "default": "isStunned",
+        "pt": "estaAtordoado",
+        "block": "Alvo está [Atordoado]?"
+    },
+    "syntax": {
+        "c": "int isStunned ( void );",
+        "python": "isStunned()",
+        "blocks": "<block type='is_status'><field name='COMPLEMENT'>Stunned</field></block>"
+    },
+    "description": {
+        "long": "A função verifica se o alvo selecionado pelo gladiador possui o efeito <a href='manual#nav-efeito'>atordoado</a>.",
+        "brief": "Verifica se o alvo está atordoado."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna True caso o alvo esteja no campo de visão do gladiador e possua o efeito atordoado, caso contrário retorna False.",
+        "c": "Retorna 1 caso o alvo esteja no campo de visão do gladiador e possua o efeito atordoado, caso contrário retorna 0.",
+        "blocks": "Retorna Verdadeiro caso o alvo esteja no campo de visão do gladiador e possua o efeito atordoado, caso contrário retorna Falso."
+    },
+    "sample": {
+        "c": "1.c",
+        "python": "1.py",
+        "blocks": "1.xml",
+        "explain": "1.txt"
+    },
+    "seealso": [
+        "isprotected",
+        "isburning",
+        "isslowed",
+        "isrunning",
+        "getambushtimeleft"
+    ],
+    "snippet": {
+        "c": "int ${1:stunned} = isStunned();",
+        "python": "${1:stunned} = isStunned()"
+    }
+}

@@ -1,0 +1,43 @@
+{
+    "name": {
+        "default": "isRunning",
+        "pt": "estaCorrendo",
+        "block": "Alvo está [Correndo]?"
+    },
+    "syntax": {
+        "c": "int isRunning ( void );",
+        "python": "isRunning()",
+        "blocks": "<block type='is_status'><field name='COMPLEMENT'>Running</field></block>"
+    },
+    "description": {
+        "long": "A função verifica se o alvo selecionado pelo gladiador possui o efeito <a href='manual#nav-efeito'>movimentação</a>, e este efeito é positivo, indicando que o alvo está correndo.",
+        "brief": "Verifica se o alvo está correndo."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna True caso o alvo esteja no campo de visão do gladiador, possua o efeito movimentação e este efeito seja positivo, caso contrário retorna False.",
+        "c": "Retorna 1 caso o alvo esteja no campo de visão do gladiador, possua o efeito movimentação e este efeito seja positivo, caso contrário retorna 0.",
+        "blocks": "Retorna Verdadeiro caso o alvo esteja no campo de visão do gladiador, possua o efeito movimentação e este efeito seja positivo, caso contrário retorna Falso."
+    },
+    "sample": {
+        "c": "29.c",
+        "python": "29.py",
+        "blocks": "29.xml",
+        "explain": "29.txt"
+    },
+    "seealso": [
+        "isprotected",
+        "isburning",
+        "isslowed",
+        "isstunned",
+        "getspeed"
+    ],
+    "snippet": {
+        "c": "int ${1:running} = isRunning();",
+        "python": "${1:running} = isRunning()"
+    }
+}

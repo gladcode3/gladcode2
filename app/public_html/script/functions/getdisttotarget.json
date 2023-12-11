@@ -1,0 +1,39 @@
+{
+    "name": {
+        "default": "getDistToTarget",
+        "pt": "pegaDistanciaAlvo",
+        "block": "Distância para [Alvo]"
+    },
+    "syntax": {
+        "c": "float getDistToTarget ( void );",
+        "python": "getDistToTarget()",
+        "blocks": "<block type='getdist'><field name='COMPLEMENT'>TARGET</field></block>"
+    },
+    "description": {
+        "long": "Retorna a distância entre o ponto definido pelas coordenadas x e y do alvo fixado e a localização do gladiador.",
+        "brief": "Retorna a distância até o alvo fixado."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Float contendo a distância entre o gladiador e o ponto definido pelas coordenadas x e y do alvo fixado. Caso o alvo não esteja visível, a função retorna False.",
+        "c": "Float contendo a distância entre o gladiador e o ponto definido pelas coordenadas x e y do alvo fixado. Caso o alvo não esteja visível, a função retorna -1.",
+        "blocks": "Número contendo a distância entre o gladiador e o ponto definido pelas coordenadas x e y do alvo fixado. Caso o alvo não esteja visível, a função retorna Falso."
+    },
+    "sample": {
+        "c": "2.c",
+        "python": "2.py",
+        "blocks": "2.xml",
+        "explain": "2.txt"
+    },
+    "seealso": [
+        "getdist"
+    ],
+    "snippet": {
+        "c": "float ${1:dist} = getDistToTarget();",
+        "python": "${1:dist} = getDistToTarget()"
+    }
+}

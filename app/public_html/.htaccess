@@ -1,0 +1,51 @@
+RewriteEngine On
+
+RewriteRule    ^play\/([a-f0-9]+)/?$    playback.php?log=$1    [NC,L]
+RewriteRule    ^tourn\/([a-f0-9]+)/?$    tournament.php?h=$1    [NC,L]
+RewriteRule    ^tourn\/([a-f0-9]+)\/([0-9]+)/?$    tournament.php?h=$1&r=$2    [NC,L]
+RewriteRule    ^train\/([a-zA-Z0-9]+)/?$    training.php?h=$1    [NC,L]
+RewriteRule    ^train\/([a-zA-Z0-9]+)\/([0-9]+)/?$    training.php?h=$1&r=$2    [NC,L]
+
+RewriteRule    ^post\/([a-f0-9]+)/?$    post.php?p=$1    [NC,L]
+
+RewriteRule    ^function/(.*)\.(.*)$    function.php?f=$1&p=$2 [NC,L]
+RewriteRule    ^funcao/(.*)\.(.*)$    function.php?f=$1&p=$2&l=pt [NC,L]
+RewriteRule    ^function/(.*)$    function.php?f=$1 [NC,L]
+RewriteRule    ^funcao/(.*)$    function.php?f=$1&l=pt [NC,L]
+
+RewriteRule    ^glad-([0-9]+)$    editor.php?g=$1    [NC,L]
+RewriteRule    ^newglad$    editor.php?g=0    [NC,L]
+
+RewriteRule    ^news$    profile.php?t=news    [NC,L]
+RewriteRule    ^glads$    profile.php?t=glads    [NC,L]
+RewriteRule    ^reports$    profile.php?t=report    [NC,L]
+RewriteRule    ^battle$    profile.php?t=battle    [NC,L]
+RewriteRule    ^battle\.(.*)$    profile.php?t=battle&s=$1    [NC,L]
+RewriteRule    ^potion$    profile.php?t=potions    [NC,L]
+RewriteRule    ^rank$    profile.php?t=rank    [NC,L]
+RewriteRule    ^messages$    profile.php?t=messages    [NC,L]
+RewriteRule    ^friends$    profile.php?t=friends    [NC,L]
+RewriteRule    ^logout$    profile.php?t=logout    [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule     ^([^\.]+)$      $1.php
+
+#nginx already redirects to https
+#RewriteCond %{HTTP_HOST} !^127\.0\.0\.1(?::\d+)?$
+#RewriteCond %{HTTPS} off
+#RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+#RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+#RewriteRule ^(.*)$ https://%1%{REQUEST_URI} [R=301,QSA,NC,L]
+
+
+# SET CONDITION TO "true" FOR MAINTENANCE MODE
+# DON'T FORGET TO CHANGE IP TO ALLOW OVERRIDE
+# https://whatismyip.com.br/
+<IF "false">    
+    RewriteCond %{REMOTE_ADDR} !^201\.21\.113\.104
+    RewriteCond %{REQUEST_URI} !^/maintenance\.html$
+    RewriteCond %{REQUEST_URI} !^/icon/[\w]*.png$
+    RewriteRule ^(.*)$ http://gladcode.dev/maintenance.html [R=307,L]
+    RewriteRule ^([^\.]+)$      $1.php
+</IF>

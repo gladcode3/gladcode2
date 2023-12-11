@@ -1,0 +1,43 @@
+{
+    "name": {
+        "default": "isProtected",
+        "pt": "estaProtegido",
+        "block": "Alvo está [Protegido]?"
+    },
+    "syntax": {
+        "c": "int isProtected ( void );",
+        "python": "isProtected()",
+        "blocks": "<block type='is_status'><field name='COMPLEMENT'>Protected</field></block>"
+    },
+    "description": {
+        "long": "A função verifica se o alvo selecionado pelo gladiador possui o efeito <a href='manual#nav-efeito'>proteção</a>.",
+        "brief": "Verifica se o alvo está protegido."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna True caso o alvo esteja no campo de visão do gladiador e possua o efeito proteção, caso contrário retorna False.",
+        "c": "Retorna 1 caso o alvo esteja no campo de visão do gladiador e possua o efeito proteção, caso contrário retorna 0.",
+        "blocks": "Retorna Verdadeiro caso o alvo esteja no campo de visão do gladiador e possua o efeito proteção, caso contrário retorna Falso."
+    },
+    "sample": {
+        "c": "28.c",
+        "python": "28.py",
+        "blocks": "28.xml",
+        "explain": "28.txt"
+    },
+    "seealso": [
+        "isburning",
+        "isrunning",
+        "isslowed",
+        "isstunned",
+        "getblocktimeleft"
+    ],
+    "snippet": {
+        "c": "int ${1:protect} = isProtected();",
+        "python": "${1:protect} = isProtected()"
+    }
+}

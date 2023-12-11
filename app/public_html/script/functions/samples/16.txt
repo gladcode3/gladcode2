@@ -1,0 +1,1 @@
+No exemplo o gladiador espera até sofrer um ataque, e quando isso acontecer, ele se vira para a direção onde recebeu o ataque, fixa no alvo e começa a atacá-lo.

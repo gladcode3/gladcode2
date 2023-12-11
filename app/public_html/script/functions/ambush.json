@@ -1,0 +1,39 @@
+{
+    "name": {
+        "default": "ambush",
+        "pt": "emboscada",
+        "block": "Emboscada"
+    },
+    "syntax": {
+        "c": "int ambush ( void );",
+        "python": "ambush()",
+        "blocks": "<block type='ambush'></block>"
+    },
+    "description": {
+        "long": "Faz com que o gladiador receba o efeito <a href='manual.php#nav-efeito'>invisibilidade</a> por 1 segundo, mais 0.1 segundos por cada ponto em <a href='manual.php#nav-glad'>agilidade</a> que o gladiador possuir. Caso o gladiador realize um ataque contra algum outro gladiador enquanto sob o efeito da invisibilidade, o gladiador acertado recebe o efeito <a href='manual.php#nav-efeito'>atordoado</a> durante 1 segundo. Todo ataque realizado contra um gladiador faz com que o gladiador que desferiu o ataque perca o efeito invisibilidade. Um gladiador atordoado não poderá agir até que o efeito termine, e ele é considerado como não estando enxergando nenhum outro gladiador presente na arena. O gladiador não recupera pontos de habilidade (ap) enquanto sob efeito da invisibilidade.",
+        "brief": "Torna-se invisível e pode atordoar o alvo."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna True caso a habilidade tenha sido lançada com sucesso, caso contrário retorna False.",
+        "c": "Retorna 1 caso a habilidade tenha sido lançada com sucesso, caso contrário retorna 0.",
+        "blocks": "Retorna Verdadeiro caso a habilidade tenha sido lançada com sucesso, caso contrário retorna Falso. Por padrão o retorno deste bloco é ignorado."
+    },
+    "sample": {
+        "c": "1.c",
+        "python": "1.py",
+        "blocks": "1.xml",
+        "explain": "1.txt"
+    },
+    "seealso": [
+        "assassinate"
+    ],
+    "snippet": {
+        "c": "ambush();",
+        "python": "ambush()"
+    }
+}

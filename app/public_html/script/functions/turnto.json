@@ -1,0 +1,48 @@
+{
+    "name": {
+        "default": "turnTo",
+        "pt": "viraPara",
+        "block": "Virar para [Posição]"
+    },
+    "syntax": {
+        "c": "int turnTo ( float x, float y );",
+        "python": "turnTo(x, y)",
+        "blocks": "<block type='turn'><field name='COMPLEMENT'>TO</field></block>"
+    },
+    "description": {
+        "long": "Rotaciona o gladiador fazendo com que ele fique virado na direção do ponto informado no parâmetro. Caso a rotação necessária resulte em uma quantidade de graus maior que o gladiador consiga rotacionar em um intervalo de tempo (determinado pelo atributo <a href='manual.php#nav-glad'>velocidade de rotação</a>), ele irá rotacionar somente a quantidade que conseguir.",
+        "brief": "Rotaciona o gladiador para um ponto."
+    },
+    "param": {
+        "default": [
+            {"name": "x", "description": "Float contendo o valor da coordenada x do ponto de destino."},
+            {"name": "y", "description": "Float contendo o valor da coordenada y do ponto de destino."}
+        ],
+        "blocks": [
+            {"name": "x", "description": "Número contendo o valor da coordenada x do ponto de destino."},
+            {"name": "y", "description": "Número contendo o valor da coordenada y do ponto de destino."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna True caso ao fim da rotação o gladiador ficou virado para o ponto informado, ou False caso contrário.",
+        "c": "Retorna 1 caso ao fim da rotação o gladiador ficou virado para o ponto informado, ou 0 caso contrário.",
+        "blocks": "Retorna Verdadeiro caso ao fim da rotação o gladiador ficou virado para o ponto informado, ou Falso caso contrário. Por padrão o retorno deste bloco é ignorado."
+    },
+    "sample": {
+        "c": "45.c",
+        "python": "45.py",
+        "blocks": "45.xml",
+        "explain": "45.txt"
+    },
+    "seealso": [
+        "turn",
+        "turntolasthit",
+        "turnright",
+        "turnleft",
+        "turntotarget"
+    ],
+    "snippet": {
+        "c": "turnTo(${1:X}, ${2:Y});",
+        "python": "turnTo(${1:X}, ${2:Y})"
+    }
+}

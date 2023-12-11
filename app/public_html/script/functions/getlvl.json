@@ -1,0 +1,36 @@
+{
+    "name": {
+        "default": "getLvl",
+        "pt": "pegaNivel",
+        "block": "Pegar informação [Nível]"
+    },
+    "syntax": {
+        "c": "int getLvl ( void );",
+        "python": "getLvl()",
+        "blocks": "<block type='get_info'><field name='COMPLEMENT'>Lvl</field></block>"
+    },
+    "description": {
+        "long": "Retorna o nível do gladiador.",
+        "brief": "Retorna o nível do gladiador."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Inteiro contendo o nível do gladiador.",
+        "blocks": "Número contendo o nível do gladiador."
+    },
+    "sample": {
+        "c": "20.c",
+        "python": "20.py",
+        "blocks": "20.xml",
+        "explain": "20.txt"
+    },
+    "seealso": [],
+    "snippet": {
+        "c": "int ${1:lvl} = getLvl();",
+        "python": "${1:lvl} = getLvl()"
+    }
+}

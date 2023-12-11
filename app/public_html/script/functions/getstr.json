@@ -1,0 +1,39 @@
+{
+    "name": {
+        "default": "getSTR",
+        "pt": "pegaFOR",
+        "block": "Pegar informação [Atributo Força]"
+    },
+    "syntax": {
+        "c": "int getSTR ( void );",
+        "python": "getSTR()",
+        "blocks": "<block type='get_info'><field name='COMPLEMENT'>STR</field></block>"
+    },
+    "description": {
+        "long": "Retorna o valor do atributo Força (STR) do gladiador.",
+        "brief": "Retorna o valor do atributo Força (STR) do gladiador."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Inteiro contendo o valor do atributo Força do gladiador.",
+        "blocks": "Número contendo o valor do atributo Força do gladiador."
+    },
+    "sample": {
+        "c": "8.c",
+        "python": "8.py",
+        "blocks": "8.xml",
+        "explain": "8.txt"
+    },
+    "seealso": [
+        "getagi",
+        "getint"
+    ],
+    "snippet": {
+        "c": "int ${1:mystr} = getSTR();",
+        "python": "${1:mystr} = getSTR()"
+    }
+}

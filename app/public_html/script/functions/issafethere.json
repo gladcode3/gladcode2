@@ -1,0 +1,45 @@
+{
+    "name": {
+        "default": "isSafeThere",
+        "pt": "seguroLa",
+        "block": "É seguro [Na posição]?"
+    },
+    "syntax": {
+        "c": "int isSafeThere ( float x, float y );",
+        "python": "isSafeThere(x, y)",
+        "blocks": "<block type='issafe'><field name='COMPLEMENT'>There</field></block>"
+    },
+    "description": {
+        "long": "A função analisa a existência do <a href='manual.php#nav-sim'>gás tóxico</a> na posição determinada pelas coordenadas x e y recebidas como parâmetro.",
+        "brief": "Descobre se o ponto está dentro da nuvem tóxica."
+    },
+    "param": {
+        "default": [
+            {"name": "x", "description": "Float contendo o valor da coordenada x do ponto."},
+            {"name": "y", "description": "Float contendo o valor da coordenada y do ponto."}
+        ],
+        "blocks": [
+            {"name": "x", "description": "Número contendo o valor da coordenada x do ponto."},
+            {"name": "y", "description": "Número contendo o valor da coordenada y do ponto."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna True caso a posição do ponto esteja segura do gás tóxico, ou False caso contrário.",
+        "c": "Retorna 1 caso a posição do ponto esteja segura do gás tóxico, ou 0 caso contrário.",
+        "blocks": "Retorna Verdadeiro caso a posição do ponto esteja segura do gás tóxico, ou Falso caso contrário."
+    },
+    "sample": {
+        "c": "30.c",
+        "python": "30.py",
+        "blocks": "30.xml",
+        "explain": "30.txt"
+    },
+    "seealso": [
+        "issafehere",
+        "getsaferadius"
+    ],
+    "snippet": {
+        "c": "int ${1:safe} = isSafeThere(${2:X}, ${3:Y});",
+        "python": "${1:safe} = isSafeThere(${2:X}, ${3:Y})"
+    }
+}

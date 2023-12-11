@@ -1,0 +1,1 @@
+No exemplo o gladiador se move para frente até que encontre algum obstáculo, então rotaciona 180 graus no sentido horário. Este comportamento repetitivo fará com que o gladiador execute uma trajetória de vai-e-vem pela arena.

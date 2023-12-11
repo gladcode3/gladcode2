@@ -1,0 +1,1 @@
+No exemplo o gladiador se desloca até um ponto da arena, e a partir dali ele fica andando de um lado para o outro.

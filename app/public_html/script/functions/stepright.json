@@ -1,0 +1,40 @@
+{
+    "name": {
+        "default": "stepRight",
+        "pt": "passoDireita",
+        "block": "Passo para [Direita]"
+    },
+    "syntax": {
+        "c": "float stepRight ( void );",
+        "python": "stepRight()",
+        "blocks": "<block type='step'><field name='COMPLEMENT'>RIGHT</field></block>"
+    },
+    "description": {
+        "long": "Faz com que o gladiador se mova para a direita. Ele executa o movimento de lado, sem rotacionar. O gladiador move-se a maior distância que conseguir dentro de um intervalo de tempo da simulação (determinado pela sua <a href='manual.php#nav-glad'>velocidade de movimento</a>). A função irá retornar a distância percorrida neste processo.",
+        "brief": "Move o gladiador para direita."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Float contendo a distância percorrida como resultado da execução da função.",
+        "blocks": "Número contendo a distância percorrida como resultado da execução da função. Por padrão o retorno deste bloco é ignorado."
+    },
+    "sample": {
+        "c": "41.c",
+        "python": "41.py",
+        "blocks": "41.xml",
+        "explain": "41.txt"
+    },
+    "seealso": [
+        "stepforward",
+        "stepback",
+        "stepleft"
+    ],
+    "snippet": {
+        "c": "stepRight();",
+        "python": "stepRight()"
+    }
+}

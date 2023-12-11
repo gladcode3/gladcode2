@@ -1,0 +1,1 @@
+No exemplo o gladiador se move para o centro da arena. Caso já esteja lá, ele tenta rotacionar 45 graus enquanto procura por um inimigo com menos vida para atacar. Caso ele consiga rotacionar 45 a cada intervalo de tempo (por causa da velocidade de rotação alta, consequência de uma Agilidade alta), ele troca o atributo de melhoria para Força.

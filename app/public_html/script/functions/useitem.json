@@ -1,0 +1,41 @@
+{
+    "name": {
+        "default": "useItem",
+        "pt": "usaItem",
+        "block": "Usar item"
+    },
+    "syntax": {
+        "c": "int useItem ( char *item );",
+        "python": "useItem(item)",
+        "blocks": "<block type='useitem'></block>"
+    },
+    "description": {
+        "long": "Usa um item que foi previamente encomendado no apotecário. Para encomendar um item, é necessário pagar seu custo em moedas de prata, possuir o apotecário em nível suficiente, e possui um compartimento livre de itens consumíveis em seu perfil. Para saber mais sobre o uso do apotecário e os itens, visite a <a href='manual#item'>seção itens do manual</a>. Cada item encomendado pode ser usado somente uma vez por batalha. O item poderá ser usado em todas batalhas que qualquer um de seus gladiadores participe dentro do tempo em que a encomenda estiver ativa, seja a batalha inciada por você ou não. Confira a lista de itens disponíveis no <a href='potion'>apotecário</a> em seu perfil, ou no manual, na <a href='manual#item'>seção de itens</a>. Para usar o item, o identificador do mesmo deve ser fornecido como argumento da função. O tempo de execução do uso do item é de 0.1s.",
+        "brief": "Usa um item encomendado do apotecário."
+    },
+    "param": {
+        "default": [
+            {"name": "item", "description": "String contendo o identificdor do item a ser usado."}
+        ],
+        "blocks": [
+            {"name": "item", "description": "Texto ou bloco de item a ser usado."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna True caso o item tenha sido usado com sucesso, caso contrário retorna False.",
+        "c": "Retorna 1 caso o item tenha sido usado com sucesso, caso contrário retorna 0.",
+        "blocks": "Retorna Verdadeiro caso o item tenha sido usado com sucesso, caso contrário retorna Falso. Por padrão o retorno deste bloco é ignorado."
+    },
+    "sample": {
+        "c": "47.c",
+        "python": "47.py",
+        "blocks": "47.xml",
+        "explain": "47.txt"
+    },
+    "seealso": [
+    ],
+    "snippet": {
+        "c": "useItem(${1:item});",
+        "python": "useItem(${1:item})"
+    }
+}

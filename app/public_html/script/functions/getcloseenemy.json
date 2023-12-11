@@ -1,0 +1,41 @@
+{
+    "name": {
+        "default": "getCloseEnemy",
+        "pt": "pegaInimigoProximo",
+        "block": "Selecionar alvo [Mais Próximo]"
+    },
+    "syntax": {
+        "c": "int getCloseEnemy ( void );",
+        "python": "getCloseEnemy()",
+        "blocks": "<block type='get_enemy'><field name='COMPLEMENT'>CloseEnemy</field></block>"
+    },
+    "description": {
+        "long": "Analisa o campo de visão do gladiador e caso haja pelo menos um inimigo seleciona o que estiver mais próximo do gladiador. Um inimigo selecionado desta maneira vira o alvo do gladiador, e todas funções que acessam informações sobre o alvo irão interagir com o inimigo selecionado.",
+        "brief": "Procura um inimigo próximo."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna False caso não haja nenhum inimigo no campo de visão, caso contrário retorna True.",
+        "c": "Retorna 0 caso não haja nenhum inimigo no campo de visão, caso contrário retorna 1.",
+        "blocks": "Retorna Falso caso não haja nenhum inimigo no campo de visão, caso contrário retorna Verdadeiro. O retorno deste bloco pode ser ignorado."
+    },
+    "sample": {
+        "c": "11.c",
+        "python": "11.py",
+        "blocks": "11.xml",
+        "explain": "11.txt"
+    },
+    "seealso": [
+        "getfarenemy",
+        "getlowhp",
+        "gethighhp"
+    ],
+    "snippet": {
+        "c": "int ${1:enemy} = getCloseEnemy();",
+        "python": "${1:enemy} = getCloseEnemy()"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "name": {
+        "default": "setSpritesheet",
+        "pt": "mudaAparencia"
+    },
+    "syntax": {
+        "c": "void setSpritesheet ( char * hash );",
+        "python": "setSpritesheet(hash)"
+    },
+    "description": {
+        "long": "Atribui uma aparência para o gladiador. A string recebida como parâmetro deverá ser uma string previamente fornecida pelo <a href='editor.php'>criador de gladiadores da gladcode</a>. Esta função somente pode ser chamada dentro da função setup. O criador de gladiadores é uma ferramenta que permite a personalização da aparência do gladiador. Após a etapa de criação da aparência, a ferramenta cadastra a folha de sprites do gladiador e fornece a <i>hash</i>, uma string que indica a folha de sprites cadastrada. Uma folha de sprites é um arquivo de imagem contendo todas as etapas de animação de um personagem, que quando executadas em sequência dão a impressão de movimento.",
+        "brief": "Atribui ao gladiador uma aparência."
+    },
+    "param": {
+        "default": [
+            {"name": "hash", "description": "String contendo a hash cadastrada referente à folha de sprites do gladiador."}
+        ]
+    },
+    "treturn": {
+        "default": "A função não possui retorno."
+    },
+    "sample": {
+        "c": "36.c",
+        "python": "36.py",
+        "explain": "36.txt"
+    },
+    "seealso": [],
+    "snippet": {
+        "c": "setSpritesheet(${1:hash});",
+        "python": "setSpritesheet(${1:hash})"
+    }
+}

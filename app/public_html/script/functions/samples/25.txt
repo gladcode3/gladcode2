@@ -1,0 +1,1 @@
+No exemplo o gladiador utiliza as funções {getX} e {getY} para verificar sua posição na arena, e com isso ajustar para onde deseja se mover, resultando em um movimento em torno das bordas da arena.

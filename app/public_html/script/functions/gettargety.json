@@ -1,0 +1,41 @@
+{
+    "name": {
+        "default": "getTargetY",
+        "pt": "pegaYAlvo",
+        "block": "Pegar [Coordenada Y] do alvo"
+    },
+    "syntax": {
+        "c": "float getTargetY ( void );",
+        "python": "getTargetY()",
+        "blocks": "<block type='get_target'><field name='COMPLEMENT'>Y</field></block>"
+    },
+    "description": {
+        "long": "Retorna o valor da coordenada y do gladiador selecionado como alvo. O conjunto de coordenadas x e y formam o ponto de localização do gladiador na <a href='manual.php#nav-sim'>arena</a>.",
+        "brief": "Retorna o valor da coordenada y do alvo."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Float contendo o valor da coordenada y do alvo, ou False caso o alvo não esteja dentro do campo de visão do gladiador.",
+        "c": "Float contendo o valor da coordenada y do alvo, ou -1 caso o alvo não esteja dentro do campo de visão do gladiador.",
+        "blocks": "Número contendo o valor da coordenada y do alvo, ou Falso caso o alvo não esteja dentro do campo de visão do gladiador."
+    },
+    "sample": {
+        "c": "2.c",
+        "python": "2.py",
+        "blocks": "2.xml",
+        "explain": "2.txt"
+    },
+    "seealso": [
+        "gettargetx",
+        "getx",
+        "gety"
+    ],
+    "snippet": {
+        "c": "float ${1:ty} = getTargetY();",
+        "python": "${1:ty} = getTargetY()"
+    }
+}

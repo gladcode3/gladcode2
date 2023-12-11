@@ -1,0 +1,1 @@
+No exemplo o gladiador procura um por inimigo, e caso o encontre verifica se eles está muito próximo ou possui proteção. Em caso afirmativo o gladiador recua, caso contrário dispara um ataque. Caso não encontre inimigos o gladiador rotaciona.

@@ -1,0 +1,45 @@
+{
+    "name": {
+        "default": "turnRight",
+        "pt": "viraDireita",
+        "block": "Virar para [Direita]"
+    },
+    "syntax": {
+        "c": "float turnRight ( float angulo );",
+        "python": "turnRight(angulo)",
+        "blocks": "<block type='turn'><field name='COMPLEMENT'>RIGHT</field></block>"
+    },
+    "description": {
+        "long": "Rotaciona o gladiador no sentido horário uma quantidade de graus determinada pelo parâmetro. Caso o gladiador não consiga rotacionar a quantidade desejada em um único intervalo de tempo, ele irá rotacionar somente a quantidade que conseguir (determinado pelo atributo <a href='manual.php#nav-glad'>velocidade de rotação</a>). A função retorna a quantidade de graus que foi rotacionada de fato.",
+        "brief": "Rotaciona o gladiador no sentido horário."
+    },
+    "param": {
+        "default": [
+            {"name": "angulo", "description": "Float contendo o ângulo que deseja-se rotacionar."}
+        ],
+        "blocks": [
+            {"name": "angulo", "description": "Número contendo o ângulo que deseja-se rotacionar."}
+        ]
+    },
+    "treturn": {
+        "default": "Float contendo o ângulo rotacionado como resultado da execução da função.",
+        "blocks": "Número contendo o ângulo rotacionado como resultado da execução da função. Por padrão o retorno deste bloco é ignorado."
+    },
+    "sample": {
+        "c": "44.c",
+        "python": "44.py",
+        "blocks": "44.xml",
+        "explain": "44.txt"
+    },
+    "seealso": [
+        "turnto",
+        "turntolasthit",
+        "turn",
+        "turnleft",
+        "turntotarget"
+    ],
+    "snippet": {
+        "c": "turnRight(${1:angle});",
+        "python": "turnRight(${1:angle})"
+    }
+}

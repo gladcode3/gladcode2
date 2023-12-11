@@ -1,0 +1,1 @@
+Este trecho de código verifica o nível do gladiador. Caso seja menor que 5, o gladiador melhora a força, caso contrário a inteligência.

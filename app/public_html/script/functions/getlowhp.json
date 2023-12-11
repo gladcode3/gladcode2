@@ -1,0 +1,41 @@
+{
+    "name": {
+        "default": "getLowHp",
+        "pt": "pegaVidaBaixa",
+        "block": "Selecionar alvo [Com menos vida]"
+    },
+    "syntax": {
+        "c": "int getLowHp ( void );",
+        "python": "getLowHp()",
+        "blocks": "<block type='get_enemy'><field name='COMPLEMENT'>LowHp</field></block>"
+    },
+    "description": {
+        "long": "Analisa o campo de visão do gladiador e caso haja pelo menos um inimigo seleciona o que possuir menor quantidade de pontos de vida. Um inimigo selecionado desta maneira vira o alvo do gladiador, e todas funções que acessam informações sobre o alvo irão interagir com o gladiador selecionado.",
+        "brief": "Procura um inimigo com menos vida."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna False caso não haja nenhum inimigo no campo de visão, caso contrário retorna True.",
+        "c": "Retorna 0 caso não haja nenhum inimigo no campo de visão, caso contrário retorna 1.",
+        "blocks": "Retorna Falso caso não haja nenhum inimigo no campo de visão, caso contrário retorna Verdadeiro. O retorno deste bloco pode ser ignorado."
+    },
+    "sample": {
+        "c": "2.c",
+        "python": "2.py",
+        "blocks": "2.xml",
+        "explain": "2.txt"
+    },
+    "seealso": [
+        "gethighhp",
+        "getcloseenemy",
+        "getfarenemy"
+    ],
+    "snippet": {
+        "c": "int ${1:enemy} = getLowHp();",
+        "python": "${1:enemy} = getLowHp()"
+    }
+}

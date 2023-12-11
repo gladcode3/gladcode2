@@ -1,0 +1,103 @@
+		<div id='skin-container'>
+			<div id='close-container'><div class='close' title='Fechar janela'>X</div></div>
+			<div id='top-container'>
+				<button id='down-scale' class='button' title='Reduzir'><img src='sprite/images/zoom-out.png'></button>
+				<button id='turn' class='button' title='Rotacionar'><img src='sprite/images/rotate.png'></button>
+				<button id='play-pause' class='button' title='Reproduzir/Parar Animação'><img src='sprite/images/play.png'></button>
+				<button id='animation' class='button' title='Tipo de animação'><img src='sprite/images/walk.png'></button>
+				<button id='up-scale' class='button' title='Ampliar'><img src='sprite/images/zoom-in.png'></button>
+			</div>
+			<div class='row'>
+				<div id='left-container'>
+					<div class='img-button cat' id='body' title='Corpo'><img src='sprite/images/body.png'></div>
+					<div class='img-button cat' id='hair' title='Estilo'><img src='sprite/images/scissors.png'></div>
+					<div class='img-button cat' id='cloth' title='Vestimentas'><img src='sprite/images/hanger.png'></div>
+					<div class='img-button cat' id='misc' title='Itens variados'><img src='sprite/images/backpack.png'></div>
+					<div class='img-button cat' id='equip' title='Armas'><img src='sprite/images/emblem.png'></div>
+				</div>
+				<div id='sub-container'>
+					<div class='img-button sub' id='gender' title='Gênero'><img src='sprite/images/gender.png'></div>
+					<div class='img-button sub' id='shape' title='Raça/Pele'><img src='sprite/images/skin.png'></div>
+					<div class='img-button sub' id='eyes' title='Olhos'><img src='sprite/images/eye.png'></div>
+					<div class='img-button sub' id='ears' title='Orelhas'><img src='sprite/images/ear.png'></div>
+					<div class='img-button sub' id='style' title='Estilo de cabelo'><img src='sprite/images/hair.png'></div>
+					<div class='img-button sub' id='color' title='Cor do cabelo'><img src='sprite/images/dye.png'></div>
+					<div class='img-button sub' id='facial' title='Barba/bigode'><img src='sprite/images/beard.png'></div>
+					<div class='img-button sub' id='bcolor' title='Cor da barba/bigode'><img src='sprite/images/bcolor.png'></div>
+					<div class='img-button sub' id='shirt' title='Roupas de torso'><img src='sprite/images/shirt.png'></div>
+					<div class='img-button sub' id='armor' title='Armaduras'><img src='sprite/images/armor.png'></div>
+					<div class='img-button sub' id='legs' title='Calças'><img src='sprite/images/pants.png'></div>
+					<div class='img-button sub' id='feet' title='Sapatos'><img src='sprite/images/boots.png'></div>
+					<div class='img-button sub' id='head' title='Proteção de cabeça'><img src='sprite/images/helmet.png'></div>
+					<div class='img-button sub' id='shoulder' title='Ombreiras'><img src='sprite/images/shoulder.png'></div>
+					<div class='img-button sub' id='belt' title='Cinto'><img src='sprite/images/belt.png'></div>
+					<div class='img-button sub' id='hands' title='Luvas'><img src='sprite/images/fist.png'></div>
+					<div class='img-button sub' id='cape' title='Capa'><img src='sprite/images/cape.png'></div>
+					<div class='img-button sub' id='melee' title='Armas corpo-a-corpo'><img src='sprite/images/swords.png'></div>
+					<div class='img-button sub' id='ranged' title='Armas de longo alcance'><img src='sprite/images/bow.png'></div>
+					<div class='img-button sub' id='shield' title='Escudos'><img src='sprite/images/shield.png'></div>
+				</div>
+				<div id='middle-container'></div>
+				<div id='right-container'>
+				</div>
+			</div>
+			<div id='bottom-container'>
+				<button id='save-glad' class='button'>PRONTO</button>
+			</div>
+		</div>
+		<div id='distribuicao-container'>
+			<div id='close-container'><div class='close' title='Fechar janela'>X</div></div>
+			<div id='content-container'>
+				<div id='distribuicao'>
+					<div class='row'>
+						<div id='cv'></div>
+						<input id='nome' class='input' type='text' placeholder='Nome do gladiador'>
+						
+					</div>
+					<div class='row'>
+						<span id='custo'>Custo</span>
+					</div>
+					<div class='row slider-container'>
+						<span class='attr'>STR</span>
+						<input class='slider' type='range' min='0' max='20' value='0'>
+						<input class='input slider-input' type='text' value='0' readonly>
+						<span class='slider-value'>0</span>
+					</div>
+					<div class='row slider-container'>
+						<span class='attr'>AGI</span>
+						<input class='slider' type='range' min='0' max='20' value='0'>
+						<input class='input slider-input' type='text' value='0' readonly>
+						<span class='slider-value'>0</span>
+					</div>
+					<div class='row slider-container'>
+						<span class='attr'>INT</span>
+						<input class='slider' type='range' min='0' max='20' value='0'>
+						<input class='input slider-input' type='text' value='0' readonly>
+						<span class='slider-value'>0</span>
+					</div>
+					<div class='row'>
+						<span id='remaining'>PONTOS RESTANTES: <span>50</span></span>
+					</div>
+					<div class='row'>
+						<button class='button' id='get-code' disabled>GERAR CÓDIGO</button>
+					</div>
+					<div class='row'>
+						<button class='button' id='back'>VOLTAR</button>
+						<button class='button' id='reset'>REINICIAR</button>
+					</div>
+				</div>
+				<div id='info'>
+					<div id='title'>
+						<img src='sprite/images/strength.png'><span>Força - STR</span>
+					</div>
+					<div id='body'>
+						<p class='fill'>Força física e resistência do gladiador.</p>
+						<p>Determina as seguintes características:</p>
+						<ul>
+							<li><img src='sprite/images/decapitation.png'><span>Dano corpo-a-corpo causado em gladiadores inimigos</span></li>
+							<li><img src='sprite/images/healing.png'><span>Pontos de vida, responsáveis por manter o gladiador vivo</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>

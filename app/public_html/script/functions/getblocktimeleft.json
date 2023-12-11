@@ -1,0 +1,40 @@
+{
+    "name": {
+        "default": "getBlockTimeLeft",
+        "pt": "tempoBloqueio",
+        "block": "Tempo restante [Resistência]"
+    },
+    "syntax": {
+        "c": "float getBlockTimeLeft ( void );",
+        "python": "getBlockTimeLeft()",
+        "blocks": "<block type='get_time'><field name='COMPLEMENT'>Block</field></block>"
+    },
+    "description": {
+        "long": "Retorna o tempo restante até que o efeito <a href='manual.php#nav-efeito'>proteção</a> expire.",
+        "brief": "Retorna o tempo restante para expirar o efeito Proteção."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Float contendo o tempo restante até o efeito proteção expirar.",
+        "blocks": "Número contendo o tempo restante até o efeito proteção expirar."
+    },
+    "sample": {
+        "c": "4.c",
+        "python": "4.py",
+        "blocks": "4.xml",
+        "explain": "4.txt"
+    },
+    "seealso": [
+        "getburntimeleft",
+        "getambushtimeleft",
+        "isprotected"
+    ],
+    "snippet": {
+        "c": "float ${1:block_time} = getBlockTimeLeft();",
+        "python": "${1:block_time} = getBlockTimeLeft()"
+    }
+}

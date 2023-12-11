@@ -1,0 +1,41 @@
+{
+    "name": {
+        "default": "getFarEnemy",
+        "pt": "pegaInimigoDistante",
+        "block": "Selecionar alvo [Mais Distante]"
+    },
+    "syntax": {
+        "c": "int getFarEnemy ( void );",
+        "python": "getFarEnemy()",
+        "blocks": "<block type='get_enemy'><field name='COMPLEMENT'>FarEnemy</field></block>"
+    },
+    "description": {
+        "long": "Analisa o campo de visão do gladiador e caso haja pelo menos um inimigo seleciona o que estiver mais distante do gladiador. Um inimigo selecionado desta maneira vira o alvo do gladiador, e todas funções que acessam informações sobre o alvo irão interagir com o gladiador selecionado.",
+        "brief": "Procura um inimigo distante."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Retorna False caso não haja nenhum inimigo no campo de visão, caso contrário retorna True.",
+        "c": "Retorna 0 caso não haja nenhum inimigo no campo de visão, caso contrário retorna 1.",
+        "blocks": "Retorna Falso caso não haja nenhum inimigo no campo de visão, caso contrário retorna Verdadeiro. O retorno deste bloco pode ser ignorado."
+    },
+    "sample": {
+        "c": "13.c",
+        "python": "13.py",
+        "blocks": "13.xml",
+        "explain": "13.txt"
+    },
+    "seealso": [
+        "getcloseenemy",
+        "getlowhp",
+        "gethighhp"
+    ],
+    "snippet": {
+        "c": "int ${1:enemy} = getFarEnemy();",
+        "python": "${1:enemy} = getFarEnemy()"
+    }
+}

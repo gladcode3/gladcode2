@@ -1,0 +1,39 @@
+{
+    "name": {
+        "default": "getLastHitAngle",
+        "pt": "anguloFuiAcertado",
+        "block": "[Ângulo] do ataque recebido"
+    },
+    "syntax": {
+        "c": "float getLastHitAngle ( void );",
+        "python": "getLastHitAngle()",
+        "blocks": "<block type='get_lasthit'><field name='COMPLEMENT'>Angle</field></block>"
+    },
+    "description": {
+        "long": "Retorna o ângulo de onde partiu o último ataque que o gladiador recebeu. O ângulo retornado é <a href='manual.php#nav-sim'>relativo à arena</a>, e não ao gladiador. Caso o gladiador tenha sido acertado por um projétil o ângulo retornado será de onde veio o projétil. O ângulo retornado será um valor entre 0 e 360, onde 0 indica a direção Norte da arena. O ângulo cresce no sentido horário.",
+        "brief": "Retorna o ângulo de onde veio o último ataque."
+    },
+    "param": {
+        "default": [
+            {"name": "void", "description": "A função não recebe parâmetros."}
+        ]
+    },
+    "treturn": {
+        "default": "Float contendo o ângulo de onde partiu o último ataque recebido pelo gladiador.",
+        "blocks": "Número contendo o ângulo de onde partiu o último ataque recebido pelo gladiador."
+    },
+    "sample": {
+        "c": "19.c",
+        "python": "19.py",
+        "blocks": "19.xml",
+        "explain": "19.txt"
+    },
+    "seealso": [
+        "getlasthittime",
+        "gethit"
+    ],
+    "snippet": {
+        "c": "float ${1:hit_angle} = getLastHitAngle();",
+        "python": "${1:hit_angle} = getLastHitAngle()"
+    }
+}

@@ -1,0 +1,1 @@
+No exemplo o gladiador se move contornando as bordas da arena. Ao detectar o gás tóxico ele começa a reduzir o tamanho de seu percuro até que eventualmente ele fica imóvel no centro da arena.
