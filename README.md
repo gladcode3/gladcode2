@@ -53,6 +53,16 @@ wget https://gladcode.dev/spritesheet.zip
 unzip spritesheet.zip
 ```
 
+### Database
+
+Before running the project, you must create the database. To do that, just place the `database.sql` file in the `build/mysql` directory. When you run the project, the database will be created automatically.
+
+You can get the `database.sql` file from the gladcode server.
+
+```bash
+wget https://gladcode.dev/database.sql
+```
+
 ## Running
 
 To run the project, simply run `docker-compose up` in the root directory of the project. The website will be available at `localhost`.
